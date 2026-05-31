@@ -1,0 +1,10 @@
+country,source,matched_model,currency,listing_count_with_price,min_price,median_price,max_price
+Libya,OpenSooq,Dacia Logan,LYD,1,2225000.0,2225000.0,2225000.0
+Libya,OpenSooq,Fiat Doblo,LYD,1,2026411000.0,2026411000.0,2026411000.0
+Libya,OpenSooq,GAC GS3,LYD,1,20261899999.0,20261899999.0,20261899999.0
+Libya,OpenSooq,Hyundai Accent,LYD,2,400.0,1159200.0,2318000.0
+Libya,OpenSooq,Jetour X70,LYD,2,202612235032.0,202646685016.0,202681135000.0
+Libya,OpenSooq,Kaiyi X3 Pro,LYD,1,20266600.0,20266600.0,20266600.0
+Libya,OpenSooq,Kia KX1,LYD,1,99999.0,99999.0,99999.0
+Morocco,Avito,Dacia Duster,MAD,9,90000.0,455000.0,880000.0
+Morocco,Avito,Hyundai Accent,MAD,15,58000.0,225000.0,1600000.0
