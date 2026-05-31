@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from vehicle_frequency_radar.aggregate import dedupe_rows, write_outputs
+from vehicle_frequency_radar.dashboard import generate_dashboard
 from vehicle_frequency_radar.text import extract_related_keywords, match_model, parse_price
 
 
@@ -60,3 +61,32 @@ def test_outputs_are_created(tmp_path: Path) -> None:
     assert (tmp_path / "raw_listings.csv").exists()
     assert (tmp_path / "model_frequency_by_market.csv").exists()
     assert (tmp_path / "price_range_by_model_market.csv").exists()
+
+
+def test_dashboard_is_created_from_outputs(tmp_path: Path) -> None:
+    row = {
+        "scrape_date": "2026-05-31",
+        "scrape_week": "2026-W22",
+        "country": "Morocco",
+        "source": "Avito",
+        "search_keyword": "Dacia Duster",
+        "matched_model": "Dacia Duster",
+        "listing_title": "Dacia Duster 2025",
+        "title_text_raw": "Dacia Duster 2025 220 000 DH",
+        "description_text_raw": "neuf",
+        "price": "220 000 DH",
+        "currency": "MAD",
+        "location": "Casablanca",
+        "posted_time": "today",
+        "listing_url": "https://example.com/1",
+        "related_keywords": "2025;neuf",
+        "price_numeric": 220000,
+        "title_normalized": "dacia duster 2025",
+        "location_normalized": "casablanca",
+        "dedupe_key_title_price_location": "dacia duster 2025|220000|casablanca",
+    }
+    write_outputs(tmp_path, [row], [row])
+    generate_dashboard(tmp_path, tmp_path / "dashboard.html")
+    html = (tmp_path / "dashboard.html").read_text(encoding="utf-8")
+    assert "Vehicle Frequency Radar" in html
+    assert "Dacia Duster" in html
