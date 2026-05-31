@@ -5,25 +5,373 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>车辆车型频次雷达</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f6f7f9;color:#18202b}header{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:24px 30px;background:#fff;border-bottom:1px solid #d7dce3}h1{margin:0;font-size:26px}.note{color:#667085;margin-top:6px}.toolbar{display:flex;gap:10px;flex-wrap:wrap}input,button,select{min-height:36px;border:1px solid #d7dce3;border-radius:6px;padding:7px 10px;background:#fff}button{background:#18202b;color:#fff;cursor:pointer}main{padding:22px 30px 36px}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:20px}.metric,section{background:#fff;border:1px solid #d7dce3;border-radius:8px}.metric{padding:15px}.metric span{display:block;color:#667085;font-size:13px}.metric strong{display:block;margin-top:7px;font-size:30px}.grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);gap:16px;align-items:start}section{padding:18px;margin-bottom:16px}h2{margin:0 0 14px;font-size:18px}.bar-list{display:grid;gap:10px}.bar-row{display:grid;grid-template-columns:minmax(170px,260px) minmax(120px,1fr) 54px;gap:10px;align-items:center}.bar-label{font-size:13px;overflow-wrap:anywhere}.bar-label span{color:#667085}.bar-track{height:12px;background:#eef1f5;border-radius:999px;overflow:hidden}.bar-fill{height:100%;background:#0f766e}.bar-count{text-align:right;font-variant-numeric:tabular-nums;color:#667085}table{width:100%;border-collapse:collapse;font-size:13px}th,td{border-bottom:1px solid #d7dce3;padding:9px 8px;text-align:left;vertical-align:top}th{color:#667085;background:#fafbfc;font-weight:600}a{color:#2563eb;text-decoration:none}.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}.empty{border:1px dashed #d7dce3;border-radius:8px;padding:18px;color:#667085;background:#fbfcfd}@media(max-width:920px){header{align-items:flex-start;flex-direction:column}main,header{padding-left:18px;padding-right:18px}.metrics,.grid{grid-template-columns:1fr}.bar-row{grid-template-columns:1fr;gap:5px}.bar-count{text-align:left}table{display:block;overflow-x:auto;white-space:nowrap}}
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --ink: #18202b;
+      --muted: #667085;
+      --line: #d7dce3;
+      --accent: #0f766e;
+      --blue: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    header {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 30px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+    }
+    h1 { margin: 0; font-size: 26px; letter-spacing: 0; }
+    .note { color: var(--muted); margin-top: 6px; font-size: 14px; }
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: flex-end; }
+    .toolbar label { font-size: 13px; color: var(--muted); }
+    input[type="file"], button, select, input[type="search"] {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 7px 10px;
+      background: #fff;
+      color: var(--ink);
+    }
+    button {
+      background: var(--ink);
+      color: #fff;
+      cursor: pointer;
+    }
+    main { padding: 22px 30px 36px; }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .metric, section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .metric { padding: 15px; }
+    .metric span { display: block; color: var(--muted); font-size: 13px; }
+    .metric strong { display: block; margin-top: 7px; font-size: 30px; }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+      gap: 16px;
+      align-items: start;
+    }
+    section { padding: 18px; margin-bottom: 16px; }
+    h2 { margin: 0 0 14px; font-size: 18px; }
+    .bar-list { display: grid; gap: 10px; }
+    .bar-row {
+      display: grid;
+      grid-template-columns: minmax(170px, 260px) minmax(120px, 1fr) 54px;
+      gap: 10px;
+      align-items: center;
+    }
+    .bar-label { font-size: 13px; overflow-wrap: anywhere; }
+    .bar-label span { color: var(--muted); }
+    .bar-track { height: 12px; background: #eef1f5; border-radius: 999px; overflow: hidden; }
+    .bar-fill { height: 100%; background: var(--accent); }
+    .bar-count { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 9px 8px; text-align: left; vertical-align: top; }
+    th { color: var(--muted); background: #fafbfc; font-weight: 600; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+    .empty {
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      color: var(--muted);
+      background: #fbfcfd;
+    }
+    .status-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .status-box {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .status-box strong { display: block; margin-bottom: 6px; }
+    .status-box p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      border-radius: 999px;
+      padding: 3px 10px;
+      background: #e6f4f1;
+      color: #0f766e;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    @media (max-width: 920px) {
+      header { align-items: flex-start; flex-direction: column; }
+      main, header { padding-left: 18px; padding-right: 18px; }
+      .metrics, .grid, .status-panel { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 1fr; gap: 5px; }
+      .bar-count { text-align: left; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+    }
   </style>
 </head>
 <body>
-  <header><div><h1>车辆车型频次雷达</h1><div class="note">当前默认展示演示数据；上传 output 目录里的 CSV 后才是真实抓取数据。</div></div><div class="toolbar"><input id="csvFiles" type="file" accept=".csv" multiple><button id="demoButton" type="button">演示数据</button></div></header>
+  <header>
+    <div>
+      <h1>车辆车型频次雷达</h1>
+      <div class="note">只统计公开车源页面里的车型与关键词出现次数，不做机会评分或业务建议。</div>
+    </div>
+    <div class="toolbar">
+      <label for="csvFiles">上传真实 CSV</label>
+      <input id="csvFiles" type="file" accept=".csv" multiple>
+      <button id="demoButton" type="button">演示数据</button>
+    </div>
+  </header>
   <main>
-    <div class="metrics"><div class="metric"><span>匹配 listing 数</span><strong id="totalListings">0</strong></div><div class="metric"><span>匹配车型数</span><strong id="modelCount">0</strong></div><div class="metric"><span>市场数</span><strong id="marketCount">0</strong></div><div class="metric"><span>来源数</span><strong id="sourceCount">0</strong></div></div>
-    <div class="grid"><div><section><h2>各市场车型频次</h2><div id="modelBars"></div></section><section><h2>各市场车型价格区间</h2><div id="priceTable"></div></section><section><h2>原始 listing 链接</h2><div class="filters"><input id="listingSearch" type="search" placeholder="筛选 listing"><select id="marketFilter"><option value="">全部市场</option></select></div><div id="listingTable"></div></section></div><div><section><h2>相关关键词频次</h2><div id="relatedBars"></div></section><section><h2>周度变化</h2><div id="weeklyTable"></div></section></div></div>
+    <div class="status-panel">
+      <div class="status-box">
+        <strong>数据状态：<span id="dataStatus" class="pill">正在显示演示数据</span></strong>
+        <p>页面自带的数据只是示例。运行采集程序后，到项目的 <code>output/</code> 目录找到 CSV，再用右上角上传。上传后图表会在浏览器里直接刷新。</p>
+      </div>
+      <div class="status-box">
+        <strong>建议上传的文件</strong>
+        <p><code>cleaned_listings.csv</code>、<code>model_frequency_by_market.csv</code>、<code>related_keyword_frequency.csv</code>、<code>price_range_by_model_market.csv</code>、<code>model_frequency_change_weekly.csv</code></p>
+      </div>
+    </div>
+    <div class="metrics">
+      <div class="metric"><span>匹配车源数</span><strong id="totalListings">0</strong></div>
+      <div class="metric"><span>匹配车型数</span><strong id="modelCount">0</strong></div>
+      <div class="metric"><span>市场数</span><strong id="marketCount">0</strong></div>
+      <div class="metric"><span>来源数</span><strong id="sourceCount">0</strong></div>
+    </div>
+    <div class="grid">
+      <div>
+        <section>
+          <h2>各市场车型频次</h2>
+          <div id="modelBars"></div>
+        </section>
+        <section>
+          <h2>各市场车型价格区间</h2>
+          <div id="priceTable"></div>
+        </section>
+        <section>
+          <h2>原始车源链接</h2>
+          <div class="filters">
+            <input id="listingSearch" type="search" placeholder="筛选车源">
+            <select id="marketFilter"><option value="">全部市场</option></select>
+          </div>
+          <div id="listingTable"></div>
+        </section>
+      </div>
+      <div>
+        <section>
+          <h2>相关关键词频次</h2>
+          <div id="relatedBars"></div>
+        </section>
+        <section>
+          <h2>周度变化</h2>
+          <div id="weeklyTable"></div>
+        </section>
+      </div>
+    </div>
   </main>
   <script>
-    const state={model_frequency_by_market:[{country:"Morocco",source:"Avito",matched_model:"Dacia Duster",listing_count:"12",unique_url_count:"12"},{country:"Algeria",source:"Ouedkniss",matched_model:"MG5",listing_count:"8",unique_url_count:"8"},{country:"Libya",source:"OpenSooq",matched_model:"Hyundai Accent",listing_count:"6",unique_url_count:"6"}],related_keyword_frequency:[{country:"Morocco",source:"Avito",matched_model:"Dacia Duster",related_keyword:"2025",listing_count:"7"},{country:"Algeria",source:"Ouedkniss",matched_model:"MG5",related_keyword:"automatique",listing_count:"4"},{country:"Libya",source:"OpenSooq",matched_model:"Hyundai Accent",related_keyword:"new",listing_count:"3"}],price_range_by_model_market:[{country:"Morocco",source:"Avito",matched_model:"Dacia Duster",currency:"MAD",listing_count_with_price:"9",min_price:"180000",median_price:"215000",max_price:"260000"},{country:"Algeria",source:"Ouedkniss",matched_model:"MG5",currency:"DZD",listing_count_with_price:"5",min_price:"3200000",median_price:"3650000",max_price:"4100000"}],model_frequency_change_weekly:[{scrape_week:"2026-W22",country:"Morocco",source:"Avito",matched_model:"Dacia Duster",listing_count:"12",previous_week_count:"0",absolute_change:"12",pct_change:""},{scrape_week:"2026-W22",country:"Algeria",source:"Ouedkniss",matched_model:"MG5",listing_count:"8",previous_week_count:"0",absolute_change:"8",pct_change:""}],cleaned_listings:[{country:"Morocco",source:"Avito",matched_model:"Dacia Duster",listing_title:"Dacia Duster 2025",price:"220 000 DH",location:"Casablanca",listing_url:"https://example.com/listing-1"},{country:"Algeria",source:"Ouedkniss",matched_model:"MG5",listing_title:"MG 5 automatique",price:"3 650 000 DA",location:"Alger",listing_url:"https://example.com/listing-2"}]};
-    const labels={scrape_week:"抓取周",country:"市场",source:"来源",matched_model:"匹配车型",listing_count:"listing 数",previous_week_count:"上周 listing 数",absolute_change:"变化量",pct_change:"变化百分比",currency:"币种",listing_count_with_price:"有价格 listing 数",min_price:"最低价",median_price:"中位价",max_price:"最高价",listing_title:"标题",price:"价格",location:"地点",listing_url:"原始链接"};
-    csvFiles.addEventListener("change",async e=>{for(const file of Array.from(e.target.files||[])){const key=file.name.replace(/\.csv$/i,"");if(key in state)state[key]=parseCsv(await file.text())}render()});demoButton.addEventListener("click",render);listingSearch.addEventListener("input",renderListings);marketFilter.addEventListener("change",renderListings);
-    function parseCsv(text){const rows=[];let cur="",row=[],q=false;for(let i=0;i<text.length;i++){const c=text[i],n=text[i+1];if(c==='"'&&q&&n==='"'){cur+='"';i++;continue}if(c==='"'){q=!q;continue}if(c===","&&!q){row.push(cur);cur="";continue}if((c==="\n"||c==="\r")&&!q){if(c==="\r"&&n==="\n")i++;row.push(cur);rows.push(row);row=[];cur="";continue}cur+=c}if(cur||row.length){row.push(cur);rows.push(row)}const h=rows.shift()||[];return rows.filter(r=>r.some(Boolean)).map(r=>Object.fromEntries(h.map((x,i)=>[x,r[i]||""])))}
-    function render(){const f=state.model_frequency_by_market;totalListings.textContent=sum(f,"listing_count");modelCount.textContent=new Set(f.map(r=>r.matched_model).filter(Boolean)).size;marketCount.textContent=new Set(f.map(r=>r.country).filter(Boolean)).size;sourceCount.textContent=new Set(f.map(r=>r.source).filter(Boolean)).size;renderBars("modelBars",sortByCount(f).slice(0,20),"matched_model","listing_count",["country","source"]);renderBars("relatedBars",sortByCount(state.related_keyword_frequency).slice(0,30),"related_keyword","listing_count",["matched_model","country"]);renderTable("priceTable",state.price_range_by_model_market,["country","source","matched_model","currency","listing_count_with_price","min_price","median_price","max_price"]);renderTable("weeklyTable",state.model_frequency_change_weekly,["scrape_week","country","source","matched_model","listing_count","previous_week_count","absolute_change","pct_change"]);marketFilter.innerHTML='<option value="">全部市场</option>';[...new Set(state.cleaned_listings.map(r=>r.country).filter(Boolean))].sort().forEach(country=>{const o=document.createElement("option");o.value=country;o.textContent=country;marketFilter.appendChild(o)});renderListings()}
-    function renderListings(){const country=marketFilter.value,term=listingSearch.value.toLowerCase();const rows=state.cleaned_listings.filter(r=>{const h=[r.country,r.source,r.matched_model,r.listing_title,r.location].join(" ").toLowerCase();return(!country||r.country===country)&&(!term||h.includes(term))}).slice(0,100);renderTable("listingTable",rows,["country","source","matched_model","listing_title","price","location","listing_url"],true)}
-    function renderBars(id,rows,labelKey,valueKey,contextKeys){const target=document.getElementById(id);if(!rows.length){target.innerHTML='<div class="empty">暂无数据。</div>';return}const max=Math.max(...rows.map(r=>num(r[valueKey])),1);target.innerHTML='<div class="bar-list">'+rows.map(r=>{const v=num(r[valueKey]),w=Math.max(2,Math.round(v/max*100)),ctx=contextKeys.map(k=>r[k]).filter(Boolean).join(" / ");return `<div class="bar-row"><div class="bar-label"><strong>${esc(r[labelKey])}</strong><br><span>${esc(ctx)}</span></div><div class="bar-track"><div class="bar-fill" style="width:${w}%"></div></div><div class="bar-count">${v}</div></div>`}).join("")+"</div>"}
-    function renderTable(id,rows,cols,linkLast=false){const target=document.getElementById(id);if(!rows.length){target.innerHTML='<div class="empty">暂无数据。</div>';return}const head=cols.map(c=>`<th>${esc(labels[c]||c)}</th>`).join(""),body=rows.slice(0,100).map(r=>`<tr>${cols.map((c,i)=>{const v=r[c]||"";const html=linkLast&&i===cols.length-1&&v?`<a href="${esc(v)}" target="_blank" rel="noreferrer">查看</a>`:esc(v);return `<td>${html}</td>`}).join("")}</tr>`).join("");target.innerHTML=`<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`}
-    function sortByCount(rows){return[...rows].sort((a,b)=>num(b.listing_count)-num(a.listing_count))}function sum(rows,key){return rows.reduce((t,r)=>t+num(r[key]),0)}function num(v){return Number.parseFloat(v||0)||0}function esc(v){return String(v||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}render();
+    const state = {
+      model_frequency_by_market: [
+        {country: "Morocco", source: "Avito", matched_model: "Dacia Duster", listing_count: "12", unique_url_count: "12"},
+        {country: "Algeria", source: "Ouedkniss", matched_model: "MG5", listing_count: "8", unique_url_count: "8"},
+        {country: "Libya", source: "OpenSooq", matched_model: "Hyundai Accent", listing_count: "6", unique_url_count: "6"}
+      ],
+      related_keyword_frequency: [
+        {country: "Morocco", source: "Avito", matched_model: "Dacia Duster", related_keyword: "2025", listing_count: "7"},
+        {country: "Algeria", source: "Ouedkniss", matched_model: "MG5", related_keyword: "automatique", listing_count: "4"},
+        {country: "Libya", source: "OpenSooq", matched_model: "Hyundai Accent", related_keyword: "new", listing_count: "3"}
+      ],
+      price_range_by_model_market: [
+        {country: "Morocco", source: "Avito", matched_model: "Dacia Duster", currency: "MAD", listing_count_with_price: "9", min_price: "180000", median_price: "215000", max_price: "260000"},
+        {country: "Algeria", source: "Ouedkniss", matched_model: "MG5", currency: "DZD", listing_count_with_price: "5", min_price: "3200000", median_price: "3650000", max_price: "4100000"}
+      ],
+      model_frequency_change_weekly: [
+        {scrape_week: "2026-W22", country: "Morocco", source: "Avito", matched_model: "Dacia Duster", listing_count: "12", previous_week_count: "0", absolute_change: "12", pct_change: ""},
+        {scrape_week: "2026-W22", country: "Algeria", source: "Ouedkniss", matched_model: "MG5", listing_count: "8", previous_week_count: "0", absolute_change: "8", pct_change: ""}
+      ],
+      cleaned_listings: [
+        {country: "Morocco", source: "Avito", matched_model: "Dacia Duster", listing_title: "Dacia Duster 2025", price: "220 000 DH", location: "Casablanca", listing_url: "https://example.com/listing-1"},
+        {country: "Algeria", source: "Ouedkniss", matched_model: "MG5", listing_title: "MG 5 automatique", price: "3 650 000 DA", location: "Alger", listing_url: "https://example.com/listing-2"}
+      ]
+    };
+    const columnLabels = {
+      scrape_week: "抓取周",
+      country: "市场",
+      source: "来源",
+      matched_model: "匹配车型",
+      listing_count: "车源数",
+      previous_week_count: "上周车源数",
+      absolute_change: "变化量",
+      pct_change: "变化百分比",
+      currency: "币种",
+      listing_count_with_price: "有价格车源数",
+      min_price: "最低价",
+      median_price: "中位价",
+      max_price: "最高价",
+      listing_title: "标题",
+      price: "价格",
+      location: "地点",
+      listing_url: "原始链接"
+    };
+    const countryLabels = {
+      Morocco: "摩洛哥",
+      Algeria: "阿尔及利亚",
+      Libya: "利比亚"
+    };
+    let usingDemoData = true;
+
+    const fileInput = document.getElementById("csvFiles");
+    const demoButton = document.getElementById("demoButton");
+    const listingSearch = document.getElementById("listingSearch");
+    const marketFilter = document.getElementById("marketFilter");
+    const dataStatus = document.getElementById("dataStatus");
+
+    fileInput.addEventListener("change", async event => {
+      const files = Array.from(event.target.files || []);
+      let loaded = 0;
+      for (const file of files) {
+        const key = file.name.replace(/\.csv$/i, "");
+        if (key in state) {
+          state[key] = parseCsv(await file.text());
+          loaded += 1;
+        }
+      }
+      if (loaded) {
+        usingDemoData = false;
+        dataStatus.textContent = `已加载 ${loaded} 个真实 CSV`;
+      } else {
+        dataStatus.textContent = "未识别 CSV 文件名";
+      }
+      render();
+    });
+    demoButton.addEventListener("click", () => {
+      usingDemoData = true;
+      dataStatus.textContent = "正在显示演示数据";
+      render();
+    });
+    listingSearch.addEventListener("input", renderListings);
+    marketFilter.addEventListener("change", renderListings);
+
+    function parseCsv(text) {
+      const rows = [];
+      let current = "", row = [], quoted = false;
+      for (let i = 0; i < text.length; i += 1) {
+        const char = text[i], next = text[i + 1];
+        if (char === '"' && quoted && next === '"') { current += '"'; i += 1; continue; }
+        if (char === '"') { quoted = !quoted; continue; }
+        if (char === "," && !quoted) { row.push(current); current = ""; continue; }
+        if ((char === "\n" || char === "\r") && !quoted) {
+          if (char === "\r" && next === "\n") i += 1;
+          row.push(current); rows.push(row); row = []; current = "";
+          continue;
+        }
+        current += char;
+      }
+      if (current || row.length) { row.push(current); rows.push(row); }
+      const headers = rows.shift() || [];
+      return rows.filter(items => items.some(Boolean)).map(items => Object.fromEntries(headers.map((header, index) => [header, items[index] || ""])));
+    }
+
+    function render() {
+      const frequency = state.model_frequency_by_market;
+      document.getElementById("totalListings").textContent = sum(frequency, "listing_count");
+      document.getElementById("modelCount").textContent = new Set(frequency.map(row => row.matched_model).filter(Boolean)).size;
+      document.getElementById("marketCount").textContent = new Set(frequency.map(row => row.country).filter(Boolean)).size;
+      document.getElementById("sourceCount").textContent = new Set(frequency.map(row => row.source).filter(Boolean)).size;
+
+      renderBars("modelBars", sortByCount(frequency).slice(0, 20), "matched_model", "listing_count", ["country", "source"]);
+      renderBars("relatedBars", sortByCount(state.related_keyword_frequency).slice(0, 30), "related_keyword", "listing_count", ["matched_model", "country"]);
+      renderTable("priceTable", state.price_range_by_model_market, ["country", "source", "matched_model", "currency", "listing_count_with_price", "min_price", "median_price", "max_price"]);
+      renderTable("weeklyTable", state.model_frequency_change_weekly, ["scrape_week", "country", "source", "matched_model", "listing_count", "previous_week_count", "absolute_change", "pct_change"]);
+
+      marketFilter.innerHTML = '<option value="">全部市场</option>';
+      [...new Set(state.cleaned_listings.map(row => row.country).filter(Boolean))].sort().forEach(country => {
+        const option = document.createElement("option");
+        option.value = country;
+        option.textContent = displayValue("country", country);
+        marketFilter.appendChild(option);
+      });
+      if (usingDemoData) {
+        dataStatus.textContent = "正在显示演示数据";
+      }
+      renderListings();
+    }
+
+    function renderListings() {
+      const country = marketFilter.value;
+      const term = listingSearch.value.toLowerCase();
+      const rows = state.cleaned_listings.filter(row => {
+        const haystack = [row.country, row.source, row.matched_model, row.listing_title, row.location].join(" ").toLowerCase();
+        return (!country || row.country === country) && (!term || haystack.includes(term));
+      }).slice(0, 100);
+      renderTable("listingTable", rows, ["country", "source", "matched_model", "listing_title", "price", "location", "listing_url"], true);
+    }
+
+    function renderBars(targetId, rows, labelKey, valueKey, contextKeys) {
+      const target = document.getElementById(targetId);
+      if (!rows.length) { target.innerHTML = '<div class="empty">暂无数据。</div>'; return; }
+      const maxValue = Math.max(...rows.map(row => number(row[valueKey])), 1);
+      target.innerHTML = '<div class="bar-list">' + rows.map(row => {
+        const value = number(row[valueKey]);
+        const width = Math.max(2, Math.round((value / maxValue) * 100));
+        const context = contextKeys.map(key => displayValue(key, row[key])).filter(Boolean).join(" / ");
+        return `<div class="bar-row"><div class="bar-label"><strong>${escapeHtml(row[labelKey])}</strong><br><span>${escapeHtml(context)}</span></div><div class="bar-track"><div class="bar-fill" style="width:${width}%"></div></div><div class="bar-count">${value}</div></div>`;
+      }).join("") + "</div>";
+    }
+
+    function renderTable(targetId, rows, columns, linkLast = false) {
+      const target = document.getElementById(targetId);
+      if (!rows.length) { target.innerHTML = '<div class="empty">暂无数据。</div>'; return; }
+      const head = columns.map(column => `<th>${escapeHtml(columnLabels[column] || column)}</th>`).join("");
+      const body = rows.slice(0, 100).map(row => {
+        const cells = columns.map((column, index) => {
+          const value = row[column] || "";
+          const content = linkLast && index === columns.length - 1 && value
+            ? `<a href="${escapeHtml(value)}" target="_blank" rel="noreferrer">查看</a>`
+            : escapeHtml(displayValue(column, value));
+          return `<td>${content}</td>`;
+        }).join("");
+        return `<tr>${cells}</tr>`;
+      }).join("");
+      target.innerHTML = `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
+    }
+
+    function sortByCount(rows) {
+      return [...rows].sort((a, b) => number(b.listing_count) - number(a.listing_count));
+    }
+    function sum(rows, key) { return rows.reduce((total, row) => total + number(row[key]), 0); }
+    function number(value) { return Number.parseFloat(value || 0) || 0; }
+    function displayValue(column, value) {
+      if (column === "country") return countryLabels[value] || value || "";
+      return value || "";
+    }
+    function escapeHtml(value) {
+      return String(value || "").replace(/[&<>"']/g, char => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+      }[char]));
+    }
+    render();
   </script>
 </body>
 </html>
