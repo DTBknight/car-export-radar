@@ -52,7 +52,7 @@ python -m vehicle_frequency_radar --out output --max-pages 1 --no-fetch-details 
 
 Open `output/dashboard.html` in a browser to inspect the generated dashboard.
 
-The repository also includes a visible `dashboard.html` file at the project root. Open it directly for a demo dashboard, or upload the generated CSV files from `output/` using the file picker.
+The repository also includes a visible `dashboard.html` file at the project root. Its UI is Chinese. It starts with demo data only; upload the generated CSV files from `output/` before interpreting counts.
 
 Try Playwright only when plain HTML returns no parseable listings:
 
@@ -144,6 +144,15 @@ The pipeline deduplicates by:
 - `title_normalized + price_numeric + location_normalized`
 
 This catches duplicates caused by searching multiple aliases, for example `MG5` and `MG 5`.
+
+## Data Verification
+
+The dashboard does not make scraped data true by itself. Treat the CSV files as the audit trail:
+
+- `raw_listings.csv` keeps scrape date, source, search keyword, raw title text, price, location, posted time, and listing URL.
+- `cleaned_listings.csv` keeps the normalized/deduplicated version used by the charts.
+- `listing_url` is the evidence link. Open a sample of links and compare the title, price, location, and model match against the CSV row.
+- The root `dashboard.html` starts with demo data. Upload real generated CSV files from `output/` before interpreting any counts.
 
 ## How To Optimize This MVP
 
