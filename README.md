@@ -44,6 +44,14 @@ Run a small, respectful first pass:
 python -m vehicle_frequency_radar --out output --max-pages 1 --no-fetch-details
 ```
 
+Generate CSV outputs and a static visualization page:
+
+```bash
+python -m vehicle_frequency_radar --out output --max-pages 1 --no-fetch-details --dashboard
+```
+
+Open `output/dashboard.html` in a browser to inspect the dashboard.
+
 Try Playwright only when plain HTML returns no parseable listings:
 
 ```bash
@@ -66,6 +74,12 @@ Append a new run to existing CSVs before deduplication and weekly aggregation:
 
 ```bash
 python -m vehicle_frequency_radar --out output --append --max-pages 1
+```
+
+Generate or refresh the dashboard from existing CSV files:
+
+```bash
+python -m vehicle_frequency_radar.dashboard --input output --out output/dashboard.html
 ```
 
 ## Compliance Defaults
@@ -96,6 +110,10 @@ The run writes six CSV files:
 4. `model_frequency_change_weekly.csv`
 5. `related_keyword_frequency.csv`
 6. `price_range_by_model_market.csv`
+
+When `--dashboard` is used, the run also writes:
+
+- `dashboard.html`
 
 Listing fields include:
 
@@ -140,4 +158,11 @@ This catches duplicates caused by searching multiple aliases, for example `MG5` 
 ```bash
 pip install ".[dev]"
 pytest
+```
+
+You can also smoke-test the CLI and dashboard generator without scraping:
+
+```bash
+python -m vehicle_frequency_radar --help
+python -m vehicle_frequency_radar.dashboard --input output --out output/dashboard.html
 ```
