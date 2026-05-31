@@ -50,7 +50,9 @@ Generate CSV outputs and a static visualization page:
 python -m vehicle_frequency_radar --out output --max-pages 1 --no-fetch-details --dashboard
 ```
 
-Open `output/dashboard.html` in a browser to inspect the dashboard.
+Open `output/dashboard.html` in a browser to inspect the generated dashboard.
+
+The repository also includes a visible `dashboard.html` file at the project root. Open it directly for a demo dashboard, or upload the generated CSV files from `output/` using the file picker.
 
 Try Playwright only when plain HTML returns no parseable listings:
 
