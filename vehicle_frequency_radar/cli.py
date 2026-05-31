@@ -6,6 +6,7 @@ from pathlib import Path
 
 from .aggregate import dedupe_rows, read_csv, write_outputs
 from .config import CLEANED_FIELDS, RAW_FIELDS, SEARCH_KEYWORDS, SOURCES
+from .dashboard import generate_dashboard
 from .scraper import RadarScraper
 
 
@@ -51,6 +52,16 @@ def main() -> None:
         default="requests",
         help="Use requests, Playwright, or Playwright only after requests parses no listings.",
     )
+    parser.add_argument(
+        "--dashboard",
+        action="store_true",
+        help="Generate a static HTML dashboard after writing CSV outputs.",
+    )
+    parser.add_argument(
+        "--dashboard-file",
+        default="dashboard.html",
+        help="Dashboard filename inside the output directory when --dashboard is used.",
+    )
     parser.add_argument("--log-level", default="INFO", choices=["DEBUG", "INFO", "WARNING", "ERROR"])
     args = parser.parse_args()
 
@@ -94,6 +105,8 @@ def main() -> None:
     ]
     cleaned_rows = [{field: row.get(field, "") for field in CLEANED_FIELDS} for row in cleaned_rows]
     write_outputs(out_dir, raw_rows, cleaned_rows)
+    if args.dashboard:
+        generate_dashboard(out_dir, out_dir / args.dashboard_file)
 
     print(f"Wrote {len(cleaned_rows)} deduped listings to {out_dir}")
 
