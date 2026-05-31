@@ -88,5 +88,5 @@ def test_dashboard_is_created_from_outputs(tmp_path: Path) -> None:
     write_outputs(tmp_path, [row], [row])
     generate_dashboard(tmp_path, tmp_path / "dashboard.html")
     html = (tmp_path / "dashboard.html").read_text(encoding="utf-8")
-    assert "Vehicle Frequency Radar" in html
+    assert "车辆车型频次雷达" in html
     assert "Dacia Duster" in html
