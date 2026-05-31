@@ -59,11 +59,11 @@ def _render_html(payload: dict[str, list[dict[str, str]]]) -> str:
 
     html_payload = html.escape(json.dumps(payload, ensure_ascii=False))
     return f"""<!doctype html>
-<html lang="en">
+  <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vehicle Frequency Radar</title>
+  <title>车辆车型频次雷达</title>
   <style>
     :root {{
       color-scheme: light;
@@ -168,42 +168,42 @@ def _render_html(payload: dict[str, list[dict[str, str]]]) -> str:
 </head>
 <body>
   <header>
-    <h1>Vehicle Frequency Radar</h1>
-    <div class="subtitle">Public listing mention counts only. No opportunity score, ranking recommendation, or market judgment.</div>
+    <h1>车辆车型频次雷达</h1>
+    <div class="subtitle">仅统计公开车源页面中的车型与关键词出现次数；不生成机会评分，不输出商业建议。</div>
   </header>
   <main>
     <div class="metrics">
-      {_metric("Total listings", total_listings)}
-      {_metric("Matched models", unique_models)}
-      {_metric("Markets", markets)}
-      {_metric("Sources", sources)}
+      {_metric("匹配车源数", total_listings)}
+      {_metric("匹配车型数", unique_models)}
+      {_metric("市场数", markets)}
+      {_metric("来源数", sources)}
     </div>
     <div class="grid">
       <div>
         <section>
-          <h2>Model Frequency By Market</h2>
+          <h2>各市场车型频次</h2>
           {_bars(top_models, "matched_model", "listing_count", ["country", "source"])}
         </section>
         <section>
-          <h2>Price Range By Model And Market</h2>
+          <h2>各市场车型价格区间</h2>
           {_table(price_ranges, ["country", "source", "matched_model", "currency", "listing_count_with_price", "min_price", "median_price", "max_price"])}
         </section>
         <section>
-          <h2>Listing Links</h2>
+          <h2>原始车源链接</h2>
           <div class="filters">
-            <input id="listingSearch" type="search" placeholder="Filter listings">
-            <select id="marketFilter"><option value="">All markets</option></select>
+            <input id="listingSearch" type="search" placeholder="筛选车源">
+            <select id="marketFilter"><option value="">全部市场</option></select>
           </div>
           <div id="listingTable"></div>
         </section>
       </div>
       <div>
         <section>
-          <h2>Related Keyword Frequency</h2>
+          <h2>相关关键词频次</h2>
           {_bars(top_related, "related_keyword", "listing_count", ["matched_model", "country"])}
         </section>
         <section>
-          <h2>Weekly Change</h2>
+          <h2>周度变化</h2>
           {_table(weekly_change, ["scrape_week", "country", "source", "matched_model", "listing_count", "previous_week_count", "absolute_change", "pct_change"])}
         </section>
       </div>
@@ -212,6 +212,25 @@ def _render_html(payload: dict[str, list[dict[str, str]]]) -> str:
   <script id="payload" type="application/json">{html_payload}</script>
   <script>
     const data = JSON.parse(document.getElementById("payload").textContent);
+    const columnLabels = {{
+      scrape_week: "抓取周",
+      country: "市场",
+      source: "来源",
+      matched_model: "匹配车型",
+      listing_count: "车源数",
+      previous_week_count: "上周车源数",
+      absolute_change: "变化量",
+      pct_change: "变化百分比",
+      currency: "币种",
+      listing_count_with_price: "有价格车源数",
+      min_price: "最低价",
+      median_price: "中位价",
+      max_price: "最高价",
+      listing_title: "标题",
+      price: "价格",
+      location: "地点",
+      listing_url: "原始链接"
+    }};
     const listings = data.cleaned_listings || [];
     const marketFilter = document.getElementById("marketFilter");
     const listingSearch = document.getElementById("listingSearch");
@@ -239,12 +258,12 @@ def _render_html(payload: dict[str, list[dict[str, str]]]) -> str:
       }}).slice(0, 100);
 
       if (!rows.length) {{
-        listingTable.innerHTML = '<div class="empty">No listing rows to display yet.</div>';
+        listingTable.innerHTML = '<div class="empty">暂无车源数据。请先运行采集，或上传生成的 CSV。</div>';
         return;
       }}
       listingTable.innerHTML = `
         <table>
-          <thead><tr><th>Market</th><th>Source</th><th>Model</th><th>Title</th><th>Price</th><th>Location</th><th>Link</th></tr></thead>
+          <thead><tr><th>市场</th><th>来源</th><th>匹配车型</th><th>标题</th><th>价格</th><th>地点</th><th>原始链接</th></tr></thead>
           <tbody>${{rows.map(row => `
             <tr>
               <td>${{escapeHtml(row.country)}}</td>
@@ -253,7 +272,7 @@ def _render_html(payload: dict[str, list[dict[str, str]]]) -> str:
               <td>${{escapeHtml(row.listing_title)}}</td>
               <td>${{escapeHtml(row.price)}}</td>
               <td>${{escapeHtml(row.location)}}</td>
-              <td>${{row.listing_url ? `<a href="${{escapeHtml(row.listing_url)}}" target="_blank" rel="noreferrer">Open</a>` : ""}}</td>
+              <td>${{row.listing_url ? `<a href="${{escapeHtml(row.listing_url)}}" target="_blank" rel="noreferrer">查看</a>` : ""}}</td>
             </tr>`).join("")}}</tbody>
         </table>`;
     }}
@@ -272,7 +291,7 @@ def _metric(label: str, value: int) -> str:
 
 def _bars(rows: list[dict[str, str]], label_key: str, value_key: str, context_keys: list[str]) -> str:
     if not rows:
-        return '<div class="empty">No rows to display yet. Run the scraper first.</div>'
+        return '<div class="empty">暂无数据。请先运行采集，或上传生成的 CSV。</div>'
     max_value = max(_to_int(row.get(value_key)) for row in rows) or 1
     parts = ['<div class="bar-list">']
     for row in rows:
@@ -294,8 +313,8 @@ def _bars(rows: list[dict[str, str]], label_key: str, value_key: str, context_ke
 def _table(rows: Iterable[dict[str, str]], columns: list[str]) -> str:
     rows = list(rows)
     if not rows:
-        return '<div class="empty">No rows to display yet.</div>'
-    header = "".join(f"<th>{html.escape(column)}</th>" for column in columns)
+        return '<div class="empty">暂无数据。</div>'
+    header = "".join(f"<th>{html.escape(_column_label(column))}</th>" for column in columns)
     body = "".join(
         "<tr>"
         + "".join(f"<td>{html.escape(str(row.get(column, '')))}</td>" for column in columns)
@@ -310,6 +329,29 @@ def _to_int(value: str | None) -> int:
         return int(float(value or 0))
     except ValueError:
         return 0
+
+
+def _column_label(column: str) -> str:
+    labels = {
+        "scrape_week": "抓取周",
+        "country": "市场",
+        "source": "来源",
+        "matched_model": "匹配车型",
+        "listing_count": "车源数",
+        "previous_week_count": "上周车源数",
+        "absolute_change": "变化量",
+        "pct_change": "变化百分比",
+        "currency": "币种",
+        "listing_count_with_price": "有价格车源数",
+        "min_price": "最低价",
+        "median_price": "中位价",
+        "max_price": "最高价",
+        "listing_title": "标题",
+        "price": "价格",
+        "location": "地点",
+        "listing_url": "原始链接",
+    }
+    return labels.get(column, column)
 
 
 def main() -> None:
