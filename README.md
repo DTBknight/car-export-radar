@@ -26,6 +26,32 @@ python -m vehicle_frequency_radar --mode mentions --out output --max-pages 1
 - Morocco: `Reddit r/Morocco`
 - Libya: `Reddit r/Libya`
 
+## 增加数据源
+
+复制示例来源文件：
+
+```bash
+mkdir -p config
+cp config/discussion_sources.example.csv config/discussion_sources.csv
+```
+
+把要启用的行改成 `enabled=true`。`url_template` 支持：
+
+- `{query}`：车型关键词
+- `{page}`：页码
+- `{api_key}`：从环境变量读取的 API key
+
+公开经销商/贸易商网站用 `source_type=public_html`。YouTube 建议走官方 API：
+
+```bash
+export YOUTUBE_API_KEY="你的 key"
+python -m vehicle_frequency_radar --mode mentions --out output --discussion-source-file config/discussion_sources.csv
+```
+
+不要抓登录墙、私密群组，或绕过反爬限制。
+
+## 车源页作为辅助
+
 车源页仍保留为辅助供给参考，需要单独运行：
 
 ```bash
