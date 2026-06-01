@@ -1,244 +1,93 @@
-# Vehicle Model Frequency Radar MVP
+# Vehicle Model Discussion Heat Radar
 
-This Python MVP collects and counts how often target vehicle models and related keywords appear on public vehicle listing pages.
+这个项目现在定位为“车型讨论热度雷达”，目标是观察目标车型在公开讨论、经销、采购、进口、贸易语境中的出现频率。
 
-It intentionally does **not** create opportunity scores, recommendations, or market judgments. Outputs are limited to counts, frequencies, weekly changes, related keyword counts, price ranges, and source links.
+它不做机会评分，不做商业建议，只展示公开提及次数、经销/采购信号词、来源覆盖和证据链接。
 
-## 中文快速使用
+## 看网页
 
-### 数据在哪里
+GitHub Pages 地址：
 
-运行采集后，数据会生成在 `output/` 目录：
+https://dtbknight.github.io/car-export-radar/
 
-- `raw_listings.csv`：原始抓取记录，适合核验真实性。
-- `cleaned_listings.csv`：清洗和去重后的车源记录，图表主要用它。
-- `model_frequency_by_market.csv`：各市场车型出现次数。
-- `model_frequency_change_weekly.csv`：周度变化。
-- `related_keyword_frequency.csv`：相关关键词出现次数。
-- `price_range_by_model_market.csv`：各市场车型价格区间。
-- `dashboard.html`：自动生成的中文可视化页面。
+页面自动读取 `data/latest.json`，不需要手动上传 CSV。
 
-### 怎么生成真实数据
+## 默认抓取什么
+
+默认模式是讨论热度：
 
 ```bash
-python -m vehicle_frequency_radar --out output --max-pages 1 --no-fetch-details --dashboard
+python -m vehicle_frequency_radar --mode mentions --out output --max-pages 1
 ```
 
-然后打开本地文件：
+当前先从无需登录的公开 Reddit 搜索开始：
 
-```text
-output/dashboard.html
-```
+- Algeria: `Reddit r/algeria`
+- Morocco: `Reddit r/Morocco`
+- Libya: `Reddit r/Libya`
 
-### 怎么把 CSV 上传到根目录页面
-
-仓库根目录也有一个 `dashboard.html`，它默认展示演示数据。要看真实数据：
-
-1. 先运行上面的采集命令。
-2. 打开根目录的 `dashboard.html`。
-3. 点击右上角“上传真实 CSV”。
-4. 从 `output/` 目录多选上传这些文件：
-   - `cleaned_listings.csv`
-   - `model_frequency_by_market.csv`
-   - `related_keyword_frequency.csv`
-   - `price_range_by_model_market.csv`
-   - `model_frequency_change_weekly.csv`
-
-### 怎么判断数据是否属实
-
-页面只负责展示，真实性要看 CSV 里的证据链：
-
-- 每条车源都有 `listing_url`，这是原始页面链接。
-- 抽样打开 `listing_url`，对照 `title_text_raw`、`price`、`location`、`matched_model`。
-- 看 `scrape_date`，确认数据是哪一天抓的。
-- 如果链接失效或页面内容变化，以抓取当天的 CSV 记录为准，但要标记这种样本。
-
-### 建议怎么抓取
-
-先小范围验证，不要一上来全量跑：
+车源页仍保留为辅助供给参考，需要单独运行：
 
 ```bash
-python -m vehicle_frequency_radar --out output --source Avito --keyword "Dacia Duster" --max-pages 1 --no-fetch-details --dashboard
+python -m vehicle_frequency_radar --mode supply --out output_supply --max-pages 1 --no-fetch-details
 ```
 
-确认 `raw_listings.csv` 里的链接、标题、价格能对应上原页面后，再扩大到更多关键词和页数。默认用 `requests + BeautifulSoup`；只有普通 HTML 抓不到结果时，再用：
+## 输出文件
+
+讨论热度模式生成：
+
+- `raw_mentions.csv`：原始公开提及记录
+- `cleaned_mentions.csv`：清洗去重后的公开提及
+- `model_heat_by_market.csv`：车型在各市场的公开提及次数
+- `discussion_heat_change_weekly.csv`：周度讨论变化
+- `trader_signal_frequency.csv`：经销、采购、进口语境信号词频次
+- `source_coverage.csv`：来源覆盖情况
+- `evidence_samples.csv`：抽样证据链接
+
+网页使用 `data/latest.json`，这个文件由 CSV 汇总生成：
 
 ```bash
-python -m vehicle_frequency_radar --out output --renderer auto --max-pages 1 --no-fetch-details --dashboard
+python -m vehicle_frequency_radar.site --input output --out data/latest.json
 ```
 
-## Markets and Sources
+## 每天自动更新
 
-- Algeria: Ouedkniss
-- Libya: OpenSooq
-- Morocco: Avito
-- Morocco: Moteur.ma, when accessible
+GitHub Actions 里的 `Daily vehicle discussion radar scrape` 会每天运行，也可以手动点 `Run workflow`。
 
-The scraper uses configurable search URL templates in `vehicle_frequency_radar/config.py`. Public listing sites change markup often, so the first optimization point is usually updating those templates or selectors after checking a live page.
+流程是：
 
-## Setup
+1. 抓取公开讨论提及
+2. 生成 CSV
+3. 生成 `data/latest.json`
+4. 提交到仓库
+5. GitHub Pages 自动重新部署网页
+
+## 怎么判断数据是否属实
+
+看证据链，不看页面数字本身：
+
+- `discussion_url` 是原文证据链接
+- `mention_title` / `mention_text_raw` 是抓取到的标题和文本
+- `matched_model` 是命中的车型
+- `trader_signal_keywords` 是命中的经销、采购、进口信号词
+- `scrape_date` 和 `published_time` 用来判断时间
+
+抽样打开 `discussion_url` 对照原文，是验证数据的主要方法。
+
+## 后续扩展方向
+
+优先增加这些来源：
+
+- 公开经销商页面
+- 公开进口/贸易商页面
+- YouTube 官方 API 的标题、描述、发布时间和互动数据
+- Facebook/Instagram/TikTok 只通过官方 API、合规数据服务，或无需登录的公开页面种子采集
+
+不要抓登录墙、私密群组或绕过反爬限制。
+
+## 本地测试
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-On macOS, use `python3` if `python` is not available:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-Optional, only if a site requires JavaScript rendering in a later extension:
-
-```bash
-pip install ".[playwright]"
-playwright install chromium
-```
-
-## Run
-
-Run a small, respectful first pass:
-
-```bash
-python -m vehicle_frequency_radar --out output --max-pages 1 --no-fetch-details
-```
-
-Generate CSV outputs and a static visualization page:
-
-```bash
-python -m vehicle_frequency_radar --out output --max-pages 1 --no-fetch-details --dashboard
-```
-
-Open `output/dashboard.html` in a browser to inspect the dashboard.
-
-The repository also includes a visible `dashboard.html` file at the project root. Open it directly for a demo dashboard, or upload the generated CSV files from `output/` using the file picker.
-
-The root dashboard UI is Chinese. Its built-in rows are demo data only; real data appears after you upload the CSV files generated by the scraper.
-
-Try Playwright only when plain HTML returns no parseable listings:
-
-```bash
-python -m vehicle_frequency_radar --out output --renderer auto --max-pages 1 --no-fetch-details
-```
-
-Run with listing detail pages included:
-
-```bash
-python -m vehicle_frequency_radar --out output --max-pages 1
-```
-
-Limit to a source or keyword while tuning selectors:
-
-```bash
-python -m vehicle_frequency_radar --out output --source Avito --keyword "Dacia Duster" --max-pages 1
-```
-
-Append a new run to existing CSVs before deduplication and weekly aggregation:
-
-```bash
-python -m vehicle_frequency_radar --out output --append --max-pages 1
-```
-
-Generate or refresh the dashboard from existing CSV files:
-
-```bash
-python -m vehicle_frequency_radar.dashboard --input output --out output/dashboard.html
-```
-
-## Compliance Defaults
-
-- Fetches `robots.txt` before scraping each host.
-- Strict mode is enabled by default: if `robots.txt` is unavailable, the host is skipped.
-- Explicit `Disallow` rules are respected.
-- Per-host request delays default to at least 3 seconds, plus any crawl delay declared in `robots.txt`.
-- Login-only pages are not accessed.
-- Detail pages can be skipped with `--no-fetch-details` to reduce request volume.
-- Playwright is opt-in via `--renderer auto` or `--renderer playwright`.
-
-If you need a discovery run where `robots.txt` is temporarily unreachable, use:
-
-```bash
-python -m vehicle_frequency_radar --non-strict-robots --out output --max-pages 1 --no-fetch-details
-```
-
-Use that only when you have separately confirmed that public search pages may be fetched.
-
-## Outputs
-
-The run writes six CSV files:
-
-1. `raw_listings.csv`
-2. `cleaned_listings.csv`
-3. `model_frequency_by_market.csv`
-4. `model_frequency_change_weekly.csv`
-5. `related_keyword_frequency.csv`
-6. `price_range_by_model_market.csv`
-
-When `--dashboard` is used, the run also writes:
-
-- `dashboard.html`
-
-Listing fields include:
-
-- `scrape_date`
-- `country`
-- `source`
-- `search_keyword`
-- `matched_model`
-- `listing_title`
-- `title_text_raw`
-- `description_text_raw`
-- `price`
-- `currency`
-- `location`
-- `posted_time`
-- `listing_url`
-- `related_keywords`
-
-`cleaned_listings.csv` also includes normalized title/location fields, numeric price, and the composite dedupe key.
-
-## Deduplication
-
-The pipeline deduplicates by:
-
-- `listing_url`
-- `title_normalized + price_numeric + location_normalized`
-
-This catches duplicates caused by searching multiple aliases, for example `MG5` and `MG 5`.
-
-## Data Verification
-
-The dashboard does not make scraped data "true" by itself. Treat the CSV files as the audit trail:
-
-- `raw_listings.csv` keeps scrape date, source, search keyword, raw title text, price, location, posted time, and listing URL.
-- `cleaned_listings.csv` keeps the normalized/deduplicated version used by the charts.
-- `listing_url` is the evidence link. Open a sample of links and compare the title, price, location, and model match against the CSV row.
-- The root `dashboard.html` starts with demo data. Upload real generated CSV files from `output/` before interpreting any counts.
-
-## How To Optimize This MVP
-
-- Tune one source at a time with `--source` and `--keyword`.
-- Start with `--no-fetch-details`; enable detail pages only when title-only related keyword counts are insufficient.
-- Update source selectors in `config.py` after inspecting live HTML.
-- Keep `max-pages` low until parsing quality is verified.
-- Use `--append` weekly so `model_frequency_change_weekly.csv` can compare against prior weeks.
-- Add a project-specific contact in `USER_AGENT` before running at scale.
-- Use `--renderer auto` only for sources where public pages render no listings through plain `requests`.
-
-## Tests
-
-```bash
-pip install ".[dev]"
 pytest
-```
-
-You can also smoke-test the CLI and dashboard generator without scraping:
-
-```bash
-python -m vehicle_frequency_radar --help
-python -m vehicle_frequency_radar.dashboard --input output --out output/dashboard.html
 ```
