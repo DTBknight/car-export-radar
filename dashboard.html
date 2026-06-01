@@ -3,29 +3,323 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>车源热度雷达</title>
+  <title>车型讨论热度雷达</title>
   <style>
-    :root{color-scheme:dark;--bg:#060b14;--panel:#111a28;--line:#263449;--ink:#f3f6fb;--muted:#9aa7b8;--green:#16c08a;--green2:#25e0a4;--red:#ff6565}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:1680px;margin:0 auto;padding:56px 56px 80px}header{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;margin-bottom:48px}h1{margin:0;font-size:42px}.subtitle{margin-top:10px;color:var(--muted);font-size:18px}.status{display:grid;justify-items:end;gap:10px;color:var(--muted);font-size:14px;text-align:right}.badge{display:inline-flex;padding:12px 18px;border-radius:18px;background:#12b981;color:#fff;font-weight:800}.search{width:100%;height:72px;padding:0 28px;margin-bottom:28px;border:1px solid #3b4a61;border-radius:28px;background:#111a28;color:var(--ink);font-size:22px;outline:none}.search::placeholder{color:#7f8b9e}.summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:28px}.metric{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:20px 24px}.metric span{display:block;color:var(--muted);font-size:14px}.metric strong{display:block;margin-top:8px;font-size:32px}.table-card{overflow:hidden;border:1px solid var(--line);border-radius:26px;background:var(--panel)}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{padding:24px 28px;text-align:left;border-bottom:1px solid #223044}th{color:var(--green2);font-size:16px;font-weight:900}td{font-size:18px;font-weight:700}tbody tr:hover{background:#142033}.rank{width:84px;color:#d9e1ee}.model{width:30%}.market{color:var(--muted);font-size:15px;margin-top:6px;font-weight:600}.positive{color:var(--green2)}.negative{color:var(--red)}.neutral{color:var(--muted)}.price{color:#dce5f2;font-size:15px;font-weight:650}.evidence{display:inline-flex;align-items:center;justify-content:center;min-width:116px;min-height:46px;padding:0 18px;border-radius:16px;background:#12b981;color:white;text-decoration:none;font-weight:900}.empty{padding:42px;color:var(--muted);text-align:center;font-size:18px}.subgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.45fr);gap:20px;margin-top:22px}.panel{border:1px solid var(--line);border-radius:24px;background:var(--panel);padding:22px}.panel h2{margin:0 0 18px;font-size:20px}.keyword-row{display:grid;grid-template-columns:minmax(120px,1fr) 1fr 48px;gap:12px;align-items:center;margin:12px 0;color:var(--muted);font-weight:700}.bar{height:10px;border-radius:999px;background:#243247;overflow:hidden}.fill{height:100%;background:var(--green)}@media(max-width:900px){.wrap{padding:28px 18px 48px}header{flex-direction:column;margin-bottom:28px}.status{justify-items:start;text-align:left}.summary,.subgrid{grid-template-columns:1fr}table{min-width:980px}.table-card{overflow-x:auto}h1{font-size:34px}}
+    :root {
+      color-scheme: dark;
+      --bg: #060b14;
+      --panel: #111a28;
+      --panel-2: #0d1420;
+      --line: #263449;
+      --ink: #f3f6fb;
+      --muted: #9aa7b8;
+      --green: #16c08a;
+      --green-2: #25e0a4;
+      --red: #ff6565;
+      --amber: #f3b84b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .wrap { max-width: 1680px; margin: 0 auto; padding: 56px 56px 80px; }
+    header { display: flex; justify-content: space-between; gap: 28px; align-items: flex-start; margin-bottom: 48px; }
+    h1 { margin: 0; font-size: 42px; letter-spacing: 0; }
+    .subtitle { margin-top: 10px; color: var(--muted); font-size: 18px; }
+    .status {
+      display: grid;
+      justify-items: end;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: right;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 18px;
+      background: #12b981;
+      color: white;
+      font-weight: 800;
+      font-size: 16px;
+    }
+    .search {
+      width: 100%;
+      height: 72px;
+      padding: 0 28px;
+      margin-bottom: 28px;
+      border: 1px solid #3b4a61;
+      border-radius: 28px;
+      background: #111a28;
+      color: var(--ink);
+      font-size: 22px;
+      outline: none;
+    }
+    .search::placeholder { color: #7f8b9e; }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 20px 24px;
+    }
+    .metric span { display: block; color: var(--muted); font-size: 14px; }
+    .metric strong { display: block; margin-top: 8px; font-size: 32px; }
+    .table-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--panel);
+    }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th, td { padding: 24px 28px; text-align: left; border-bottom: 1px solid #223044; }
+    th { color: var(--green-2); font-size: 16px; font-weight: 900; }
+    td { color: var(--ink); font-size: 18px; font-weight: 700; }
+    tbody tr:hover { background: #142033; }
+    .rank { width: 84px; color: #d9e1ee; }
+    .model { width: 30%; }
+    .market { color: var(--muted); font-size: 15px; margin-top: 6px; font-weight: 600; }
+    .code { color: var(--green-2); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .positive { color: var(--green-2); }
+    .negative { color: var(--red); }
+    .neutral { color: var(--muted); }
+    .price { color: #dce5f2; font-size: 15px; font-weight: 650; }
+    .evidence {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 116px;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 16px;
+      background: #12b981;
+      color: white;
+      text-decoration: none;
+      font-weight: 900;
+    }
+    .empty {
+      padding: 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 18px;
+    }
+    .subgrid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, .45fr);
+      gap: 20px;
+      margin-top: 22px;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--panel);
+      padding: 22px;
+    }
+    .panel h2 { margin: 0 0 18px; font-size: 20px; }
+    .keyword-row {
+      display: grid;
+      grid-template-columns: minmax(120px, 1fr) 1fr 48px;
+      gap: 12px;
+      align-items: center;
+      margin: 12px 0;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .bar { height: 10px; border-radius: 999px; background: #243247; overflow: hidden; }
+    .fill { height: 100%; background: var(--green); }
+    @media (max-width: 900px) {
+      .wrap { padding: 28px 18px 48px; }
+      header { flex-direction: column; margin-bottom: 28px; }
+      .status { justify-items: start; text-align: left; }
+      .summary, .subgrid { grid-template-columns: 1fr; }
+      table { min-width: 980px; }
+      .table-card { overflow-x: auto; }
+      h1 { font-size: 34px; }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header><div><h1>🚗 车源热度雷达</h1><div class="subtitle">每天自动抓取公开车辆页面，统计目标车型在各市场出现的频次。</div></div><div class="status"><div class="badge">自动更新</div><div id="lastUpdated">正在读取最新数据...</div></div></header>
-    <input id="search" class="search" type="search" placeholder="搜索车型、市场或来源（如 MG5、摩洛哥、Avito）...">
-    <div class="summary"><div class="metric"><span>今日匹配车源</span><strong id="totalCount">0</strong></div><div class="metric"><span>匹配车型</span><strong id="modelCount">0</strong></div><div class="metric"><span>覆盖市场</span><strong id="marketCount">0</strong></div><div class="metric"><span>数据来源</span><strong id="sourceCount">0</strong></div></div>
-    <div class="table-card"><table><thead><tr><th class="rank">排名</th><th class="model">车型</th><th>市场 / 来源</th><th>车源数</th><th>周变化</th><th>价格区间</th><th>证据</th></tr></thead><tbody id="rankingBody"></tbody></table><div id="emptyState" class="empty" hidden>暂无可展示的数据。请等待每日抓取任务完成，或手动运行 GitHub Actions。</div></div>
-    <div class="subgrid"><div class="panel"><h2>相关关键词</h2><div id="keywordRows"></div></div><div class="panel"><h2>数据说明</h2><div class="empty" style="padding:0;text-align:left">页面读取 <code>data/latest.json</code>。每条车源保留原始链接，点击“查看车源”可抽样核验标题、价格和地点。这里不做机会评分，也不做业务推荐。</div></div></div>
+    <header>
+      <div>
+        <h1>车型讨论热度雷达</h1>
+        <div class="subtitle">每天自动采集公开讨论内容，观察目标车型在经销、采购、进口语境里的提及热度。</div>
+      </div>
+      <div class="status">
+        <div class="badge">自动更新</div>
+        <div id="lastUpdated">正在读取最新数据...</div>
+      </div>
+    </header>
+
+    <input id="search" class="search" type="search" placeholder="搜索车型、市场或来源（如 MG5、阿尔及利亚、Reddit）...">
+
+    <div class="summary">
+      <div class="metric"><span>公开提及次数</span><strong id="totalCount">0</strong></div>
+      <div class="metric"><span>匹配车型</span><strong id="modelCount">0</strong></div>
+      <div class="metric"><span>覆盖市场</span><strong id="marketCount">0</strong></div>
+      <div class="metric"><span>数据来源</span><strong id="sourceCount">0</strong></div>
+    </div>
+
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th class="rank">排名</th>
+            <th class="model">车型</th>
+            <th>市场 / 来源</th>
+            <th>讨论次数</th>
+            <th>经销/采购信号</th>
+            <th>最新出现</th>
+            <th>证据</th>
+          </tr>
+        </thead>
+        <tbody id="rankingBody"></tbody>
+      </table>
+      <div id="emptyState" class="empty" hidden>暂无可展示的讨论数据。请等待每日抓取任务完成，或手动运行 GitHub Actions。</div>
+    </div>
+
+    <div class="subgrid">
+      <div class="panel">
+        <h2>经销 / 采购信号词</h2>
+        <div id="keywordRows"></div>
+      </div>
+      <div class="panel">
+        <h2>数据说明</h2>
+        <div class="empty" style="padding:0;text-align:left">
+          页面读取 <code>data/latest.json</code>。每条公开提及都保留证据链接，点击“查看证据”可核验原文标题、发布时间和来源。这里不做机会评分，也不做业务推荐。
+        </div>
+      </div>
+    </div>
   </div>
-<script>
-const countryLabels={Morocco:"摩洛哥",Algeria:"阿尔及利亚",Libya:"利比亚"};let payload=null;let rows=[];
-async function loadData(){try{const r=await fetch("data/latest.json",{cache:"no-store"});if(!r.ok)throw new Error(`HTTP ${r.status}`);payload=await r.json();lastUpdated.textContent=formatUpdated(payload.metadata?.generated_at)}catch(e){lastUpdated.textContent="还没有生成真实数据，当前无法自动读取。";payload={model_frequency:[],weekly_change:[],price_ranges:[],related_frequency:[],cleaned_sources:[]}}rows=buildRows(payload);render()}
-function buildRows(data){const weekly=new Map((data.weekly_change||[]).map(r=>[key(r),r]));const prices=new Map((data.price_ranges||[]).map(r=>[key(r),r]));const sourceMap=new Map();for(const s of data.cleaned_sources||[]){const k=key(s);if(!sourceMap.has(k))sourceMap.set(k,[]);sourceMap.get(k).push(s)}return(data.model_frequency||[]).map(r=>{const k=key(r);return{...r,listing_count_number:num(r.listing_count),weekly:weekly.get(k)||{},price:prices.get(k)||{},evidence:(sourceMap.get(k)||[]).find(x=>x.listing_url)}}).sort((a,b)=>b.listing_count_number-a.listing_count_number)}
-function render(){const term=search.value.trim().toLowerCase();const filtered=rows.filter(r=>!term||[r.matched_model,r.country,r.source,country(r.country)].join(" ").toLowerCase().includes(term));renderSummary(filtered);renderTable(filtered);renderKeywords(payload.related_frequency||[])}
-function renderSummary(rs){totalCount.textContent=rs.reduce((s,r)=>s+r.listing_count_number,0);modelCount.textContent=new Set(rs.map(r=>r.matched_model).filter(Boolean)).size;marketCount.textContent=new Set(rs.map(r=>r.country).filter(Boolean)).size;sourceCount.textContent=new Set(rs.map(r=>r.source).filter(Boolean)).size}
-function renderTable(rs){emptyState.hidden=rs.length>0;rankingBody.innerHTML=rs.map((r,i)=>{const ch=changeLabel(r.weekly);const url=r.evidence?.listing_url||"";return `<tr><td class="rank">${i+1}</td><td><div>${esc(r.matched_model||"-")}</div><div class="market">${esc(r.search_keywords||"")}</div></td><td><div>${esc(country(r.country))}</div><div class="market">${esc(r.source||"")}</div></td><td>${r.listing_count_number}</td><td class="${ch.className}">${ch.text}</td><td class="price">${esc(priceRange(r.price))}</td><td>${url?`<a class="evidence" href="${esc(url)}" target="_blank" rel="noreferrer">查看车源</a>`:'<span class="neutral">暂无链接</span>'}</td></tr>`}).join("")}
-function renderKeywords(ks){const top=[...ks].sort((a,b)=>num(b.listing_count)-num(a.listing_count)).slice(0,8);const max=Math.max(...top.map(r=>num(r.listing_count)),1);keywordRows.innerHTML=top.length?top.map(r=>{const c=num(r.listing_count);return `<div class="keyword-row"><div>${esc(r.related_keyword||"-")}</div><div class="bar"><div class="fill" style="width:${Math.max(4,Math.round(c/max*100))}%"></div></div><div>${c}</div></div>`}).join(""):'<div class="empty">暂无关键词数据。</div>'}
-function key(r){return [r.country||"",r.source||"",r.matched_model||""].join("|")}function country(v){return countryLabels[v]||v||"-"}function num(v){return Number.parseFloat(v||0)||0}function formatUpdated(v){if(!v)return"当前是演示数据，等待每日抓取生成真实数据。";return`最近更新：${new Date(v).toLocaleString("zh-CN",{hour12:false})}`}function changeLabel(r){const a=num(r.absolute_change);if(!r||!r.listing_count)return{text:"暂无",className:"neutral"};const p=a>0?"+":"";const pct=r.pct_change?` / ${r.pct_change}%`:"";return{text:`${p}${a}${pct}`,className:a>=0?"positive":"negative"}}function priceRange(r){if(!r||!r.min_price)return"暂无价格";return`${num(r.min_price).toLocaleString("zh-CN")} - ${num(r.max_price).toLocaleString("zh-CN")} ${r.currency||""}`.trim()}function esc(v){return String(v||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
-search.addEventListener("input",render);loadData();
-</script>
+
+  <script>
+    const countryLabels = { Morocco: "摩洛哥", Algeria: "阿尔及利亚", Libya: "利比亚" };
+    let payload = null;
+    let rows = [];
+
+    async function loadData() {
+      try {
+        const response = await fetch("data/latest.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        payload = await response.json();
+        document.getElementById("lastUpdated").textContent = formatUpdated(payload.metadata?.generated_at);
+      } catch (error) {
+        document.getElementById("lastUpdated").textContent = "还没有生成真实数据，当前无法自动读取。";
+        payload = { model_heat: [], heat_change: [], trader_frequency: [], cleaned_mentions: [], evidence_samples: [] };
+      }
+      rows = buildRows(payload);
+      render();
+    }
+
+    function buildRows(data) {
+      const modelRows = (data.model_heat && data.model_heat.length) ? data.model_heat : data.model_frequency || [];
+      const weeklyRows = (data.heat_change && data.heat_change.length) ? data.heat_change : data.weekly_change || [];
+      const mentionRows = (data.cleaned_mentions && data.cleaned_mentions.length) ? data.cleaned_mentions : data.cleaned_sources || [];
+      const weekly = new Map(weeklyRows.map(row => [key(row), row]));
+      const sourcesByModel = new Map();
+      for (const source of mentionRows) {
+        const sourceKey = key(source);
+        if (!sourcesByModel.has(sourceKey)) sourcesByModel.set(sourceKey, []);
+        sourcesByModel.get(sourceKey).push(source);
+      }
+      return modelRows
+        .map(row => {
+          const rowKey = key(row);
+          const mentionCount = number(row.mention_count || row.listing_count);
+          return {
+            ...row,
+            mention_count_number: mentionCount,
+            trader_signal_count_number: number(row.trader_signal_count),
+            weekly: weekly.get(rowKey) || {},
+            evidence: (sourcesByModel.get(rowKey) || []).find(item => item.discussion_url || item.listing_url)
+          };
+        })
+        .sort((a, b) => b.mention_count_number - a.mention_count_number);
+    }
+
+    function render() {
+      const term = document.getElementById("search").value.trim().toLowerCase();
+      const filtered = rows.filter(row => {
+        const haystack = [row.matched_model, row.country, row.source, country(row.country)].join(" ").toLowerCase();
+        return !term || haystack.includes(term);
+      });
+      renderSummary(filtered);
+      renderTable(filtered);
+      renderKeywords((payload.trader_frequency && payload.trader_frequency.length) ? payload.trader_frequency : payload.related_frequency || []);
+    }
+
+    function renderSummary(dataRows) {
+      document.getElementById("totalCount").textContent = dataRows.reduce((sum, row) => sum + row.mention_count_number, 0);
+      document.getElementById("modelCount").textContent = new Set(dataRows.map(row => row.matched_model).filter(Boolean)).size;
+      document.getElementById("marketCount").textContent = new Set(dataRows.map(row => row.country).filter(Boolean)).size;
+      document.getElementById("sourceCount").textContent = new Set(dataRows.map(row => row.source).filter(Boolean)).size;
+    }
+
+    function renderTable(dataRows) {
+      const body = document.getElementById("rankingBody");
+      const empty = document.getElementById("emptyState");
+      empty.hidden = dataRows.length > 0;
+      body.innerHTML = dataRows.map((row, index) => {
+        const evidenceUrl = row.evidence?.discussion_url || row.evidence?.listing_url || "";
+        const latest = formatShortDate(row.latest_seen || row.evidence?.published_time || "");
+        return `<tr>
+          <td class="rank">${index + 1}</td>
+          <td><div>${escapeHtml(row.matched_model || "-")}</div><div class="market">${escapeHtml(row.search_keywords || "")}</div></td>
+          <td><div>${escapeHtml(country(row.country))}</div><div class="market">${escapeHtml(row.source || "")}</div></td>
+          <td>${row.mention_count_number}</td>
+          <td class="${row.trader_signal_count_number > 0 ? "positive" : "neutral"}">${row.trader_signal_count_number}</td>
+          <td class="price">${escapeHtml(latest || "暂无")}</td>
+          <td>${evidenceUrl ? `<a class="evidence" href="${escapeHtml(evidenceUrl)}" target="_blank" rel="noreferrer">查看证据</a>` : '<span class="neutral">暂无链接</span>'}</td>
+        </tr>`;
+      }).join("");
+    }
+
+    function renderKeywords(keywordRows) {
+      const top = [...keywordRows].sort((a, b) => number(b.mention_count || b.listing_count) - number(a.mention_count || a.listing_count)).slice(0, 8);
+      const max = Math.max(...top.map(row => number(row.mention_count || row.listing_count)), 1);
+      document.getElementById("keywordRows").innerHTML = top.length ? top.map(row => {
+        const count = number(row.mention_count || row.listing_count);
+        return `<div class="keyword-row">
+          <div>${escapeHtml(row.trader_signal_keyword || row.related_keyword || "-")}</div>
+          <div class="bar"><div class="fill" style="width:${Math.max(4, Math.round(count / max * 100))}%"></div></div>
+          <div>${count}</div>
+        </div>`;
+      }).join("") : '<div class="empty">暂无关键词数据。</div>';
+    }
+
+    function key(row) { return [row.country || "", row.source || "", row.matched_model || ""].join("|"); }
+    function country(value) { return countryLabels[value] || value || "-"; }
+    function number(value) { return Number.parseFloat(value || 0) || 0; }
+    function formatUpdated(value) {
+      if (!value) return "当前是演示数据，等待每日抓取生成真实数据。";
+      return `最近更新：${new Date(value).toLocaleString("zh-CN", { hour12: false })}`;
+    }
+    function formatShortDate(value) {
+      if (!value) return "";
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return value;
+      return date.toLocaleDateString("zh-CN");
+    }
+    function formatNumber(value) { return number(value).toLocaleString("zh-CN"); }
+    function escapeHtml(value) {
+      return String(value || "").replace(/[&<>"']/g, char => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+      }[char]));
+    }
+
+    document.getElementById("search").addEventListener("input", render);
+    loadData();
+  </script>
 </body>
 </html>
