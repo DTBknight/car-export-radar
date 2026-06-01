@@ -35,6 +35,28 @@ CLEANED_FIELDS = RAW_FIELDS + [
     "dedupe_key_title_price_location",
 ]
 
+RAW_MENTION_FIELDS = [
+    "scrape_date",
+    "scrape_week",
+    "country",
+    "source",
+    "source_type",
+    "search_keyword",
+    "matched_model",
+    "mention_title",
+    "mention_text_raw",
+    "author_or_channel",
+    "published_time",
+    "discussion_url",
+    "related_keywords",
+    "trader_signal_keywords",
+]
+
+CLEANED_MENTION_FIELDS = RAW_MENTION_FIELDS + [
+    "title_normalized",
+    "dedupe_key_text_url",
+]
+
 TARGET_MODEL_ALIASES: dict[str, list[str]] = {
     "MG5": ["MG5", "MG 5"],
     "Livan X3 Pro": ["Livan X3 Pro", "Geely Livan X3 Pro"],
@@ -111,6 +133,36 @@ RELATED_KEYWORDS = [
     "sans dédouanement",
 ]
 
+TRADER_SIGNAL_KEYWORDS = [
+    "sur commande",
+    "commande",
+    "arrivage",
+    "disponible",
+    "stock",
+    "en stock",
+    "import",
+    "importation",
+    "chine",
+    "china",
+    "dédouané",
+    "sans dédouanement",
+    "port d'alger",
+    "port alger",
+    "prix jusqu'au port",
+    "whatsapp",
+    "showroom",
+    "concessionnaire",
+    "dealer",
+    "grossiste",
+    "lot",
+    "batch",
+    "purchase",
+    "procurement",
+    "order",
+    "new arrival",
+    "available",
+]
+
 
 @dataclass(frozen=True)
 class SourceSpec:
@@ -124,6 +176,16 @@ class SourceSpec:
     price_selectors: tuple[str, ...] = field(default_factory=tuple)
     location_selectors: tuple[str, ...] = field(default_factory=tuple)
     time_selectors: tuple[str, ...] = field(default_factory=tuple)
+
+
+@dataclass(frozen=True)
+class DiscussionSourceSpec:
+    country: str
+    source: str
+    source_type: str
+    base_url: str
+    search_url: Callable[[str, int], str]
+    min_delay_seconds: float = 4.0
 
 
 SOURCES = [
@@ -182,5 +244,38 @@ SOURCES = [
         price_selectors=("[class*='price']", "[class*='Price']", "[class*='prix']"),
         location_selectors=("[class*='location']", "[class*='city']", "[class*='ville']"),
         time_selectors=("time", "[class*='date']", "[class*='time']"),
+    ),
+]
+
+DISCUSSION_SOURCES = [
+    DiscussionSourceSpec(
+        country="Algeria",
+        source="Reddit r/algeria",
+        source_type="reddit_search",
+        base_url="https://www.reddit.com",
+        search_url=lambda q, page: (
+            "https://www.reddit.com/r/algeria/search.json"
+            f"?q={quote_plus(q)}&restrict_sr=1&sort=new&t=month&limit=25"
+        ),
+    ),
+    DiscussionSourceSpec(
+        country="Morocco",
+        source="Reddit r/Morocco",
+        source_type="reddit_search",
+        base_url="https://www.reddit.com",
+        search_url=lambda q, page: (
+            "https://www.reddit.com/r/Morocco/search.json"
+            f"?q={quote_plus(q)}&restrict_sr=1&sort=new&t=month&limit=25"
+        ),
+    ),
+    DiscussionSourceSpec(
+        country="Libya",
+        source="Reddit r/Libya",
+        source_type="reddit_search",
+        base_url="https://www.reddit.com",
+        search_url=lambda q, page: (
+            "https://www.reddit.com/r/Libya/search.json"
+            f"?q={quote_plus(q)}&restrict_sr=1&sort=new&t=month&limit=25"
+        ),
     ),
 ]
