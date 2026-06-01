@@ -17,6 +17,7 @@ from .config import (
 from .dashboard import generate_dashboard
 from .mention_scraper import MentionScraper
 from .scraper import RadarScraper
+from .source_loader import load_discussion_sources
 
 
 def main() -> None:
@@ -45,6 +46,11 @@ def main() -> None:
         "--keyword",
         action="append",
         help="Limit to specific search keyword(s). Can be passed multiple times.",
+    )
+    parser.add_argument(
+        "--discussion-source-file",
+        default="config/discussion_sources.csv",
+        help="Optional CSV of extra public discussion sources for --mode mentions.",
     )
     parser.add_argument(
         "--no-fetch-details",
@@ -83,6 +89,9 @@ def main() -> None:
     logging.basicConfig(level=getattr(logging, args.log_level), format="%(levelname)s: %(message)s")
 
     sources = DISCUSSION_SOURCES if args.mode == "mentions" else SOURCES
+    if args.mode == "mentions" and args.discussion_source_file:
+        extra_sources = load_discussion_sources(Path(args.discussion_source_file))
+        sources = [*sources, *extra_sources]
     if args.source:
         wanted = {value.lower() for value in args.source}
         sources = [source for source in sources if source.source.lower() in wanted]
