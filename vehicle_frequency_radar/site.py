@@ -9,6 +9,14 @@ from .aggregate import read_csv
 
 
 def build_payload(input_dir: Path) -> dict:
+    model_heat = read_csv(input_dir / "model_heat_by_market.csv")
+    heat_change = read_csv(input_dir / "discussion_heat_change_weekly.csv")
+    trader_frequency = read_csv(input_dir / "trader_signal_frequency.csv")
+    source_coverage = read_csv(input_dir / "source_coverage.csv")
+    evidence_samples = read_csv(input_dir / "evidence_samples.csv")
+    cleaned_mentions = read_csv(input_dir / "cleaned_mentions.csv")
+    raw_mentions = read_csv(input_dir / "raw_mentions.csv")
+
     model_frequency = read_csv(input_dir / "model_frequency_by_market.csv")
     weekly_change = read_csv(input_dir / "model_frequency_change_weekly.csv")
     related_frequency = read_csv(input_dir / "related_keyword_frequency.csv")
@@ -21,6 +29,13 @@ def build_payload(input_dir: Path) -> dict:
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "source_directory": str(input_dir),
             "row_counts": {
+                "model_heat": len(model_heat),
+                "heat_change": len(heat_change),
+                "trader_frequency": len(trader_frequency),
+                "source_coverage": len(source_coverage),
+                "evidence_samples": len(evidence_samples),
+                "cleaned_mentions": len(cleaned_mentions),
+                "raw_mentions": len(raw_mentions),
                 "model_frequency": len(model_frequency),
                 "weekly_change": len(weekly_change),
                 "related_frequency": len(related_frequency),
@@ -29,6 +44,13 @@ def build_payload(input_dir: Path) -> dict:
                 "raw_sources": len(raw_sources),
             },
         },
+        "model_heat": model_heat,
+        "heat_change": heat_change,
+        "trader_frequency": trader_frequency,
+        "source_coverage": source_coverage,
+        "evidence_samples": evidence_samples[:500],
+        "cleaned_mentions": cleaned_mentions[:500],
+        "raw_mentions": raw_mentions[:500],
         "model_frequency": model_frequency,
         "weekly_change": weekly_change,
         "related_frequency": related_frequency,
