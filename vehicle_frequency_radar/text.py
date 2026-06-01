@@ -5,7 +5,7 @@ import unicodedata
 from functools import lru_cache
 from typing import Optional
 
-from .config import RELATED_KEYWORDS, TARGET_MODEL_ALIASES
+from .config import RELATED_KEYWORDS, TARGET_MODEL_ALIASES, TRADER_SIGNAL_KEYWORDS
 
 
 CURRENCY_PATTERNS = {
@@ -78,6 +78,20 @@ def extract_related_keywords(text: str) -> list[str]:
         if pattern.search(normalized)
     ]
     return found
+
+
+@lru_cache(maxsize=1)
+def trader_signal_patterns() -> list[tuple[str, re.Pattern[str]]]:
+    return [(keyword, _keyword_pattern(keyword)) for keyword in TRADER_SIGNAL_KEYWORDS]
+
+
+def extract_trader_signal_keywords(text: str) -> list[str]:
+    normalized = normalize_text(text)
+    return [
+        keyword
+        for keyword, pattern in trader_signal_patterns()
+        if pattern.search(normalized)
+    ]
 
 
 def parse_price(value: Optional[str]) -> tuple[str, Optional[float], str]:
