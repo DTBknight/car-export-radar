@@ -1,4 +1,4 @@
-name: Daily vehicle radar scrape
+name: Daily vehicle discussion radar scrape
 
 on:
   workflow_dispatch:
@@ -29,11 +29,9 @@ jobs:
       - name: Run respectful scrape
         run: |
           python -m vehicle_frequency_radar \
+            --mode mentions \
             --out data/latest \
-            --max-pages 1 \
-            --no-fetch-details \
-            --dashboard \
-            --dashboard-file dashboard.html
+            --max-pages 1
 
       - name: Build site JSON
         run: |
@@ -46,5 +44,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/latest data/latest.json
-          git commit -m "Update daily vehicle radar data" || echo "No data changes to commit"
+          git commit -m "Update daily vehicle discussion radar data" || echo "No data changes to commit"
           git push
