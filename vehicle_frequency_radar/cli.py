@@ -4,15 +4,30 @@ import argparse
 import logging
 from pathlib import Path
 
-from .aggregate import dedupe_rows, read_csv, write_outputs
-from .config import CLEANED_FIELDS, RAW_FIELDS, SEARCH_KEYWORDS, SOURCES
+from .aggregate import dedupe_mentions, dedupe_rows, read_csv, write_mention_outputs, write_outputs
+from .config import (
+    CLEANED_FIELDS,
+    CLEANED_MENTION_FIELDS,
+    DISCUSSION_SOURCES,
+    RAW_FIELDS,
+    RAW_MENTION_FIELDS,
+    SEARCH_KEYWORDS,
+    SOURCES,
+)
 from .dashboard import generate_dashboard
+from .mention_scraper import MentionScraper
 from .scraper import RadarScraper
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Collect public vehicle listing frequency counts for target models."
+        description="Collect public vehicle model discussion heat or supply reference counts."
+    )
+    parser.add_argument(
+        "--mode",
+        choices=["mentions", "supply"],
+        default="mentions",
+        help="mentions collects discussion/procurement signals; supply collects vehicle listing references.",
     )
     parser.add_argument("--out", default="output", help="Output directory for CSV files.")
     parser.add_argument("--max-pages", type=int, default=1, help="Search result pages per keyword/source.")
@@ -67,7 +82,7 @@ def main() -> None:
 
     logging.basicConfig(level=getattr(logging, args.log_level), format="%(levelname)s: %(message)s")
 
-    sources = SOURCES
+    sources = DISCUSSION_SOURCES if args.mode == "mentions" else SOURCES
     if args.source:
         wanted = {value.lower() for value in args.source}
         sources = [source for source in sources if source.source.lower() in wanted]
@@ -76,39 +91,66 @@ def main() -> None:
         sources = [source for source in sources if source.country.lower() in wanted_countries]
 
     keywords = args.keyword or SEARCH_KEYWORDS
-    scraper = RadarScraper(
-        sources=sources,
-        keywords=keywords,
-        max_pages=args.max_pages,
-        fetch_details=not args.no_fetch_details,
-        strict_robots=not args.non_strict_robots,
-        renderer=args.renderer,
-    )
-    listings = scraper.run()
-
     out_dir = Path(args.out)
-    new_cleaned = [listing.asdict() for listing in listings]
-    new_raw = [{field: row.get(field, "") for field in RAW_FIELDS} for row in new_cleaned]
+    if args.mode == "mentions":
+        scraper = MentionScraper(
+            sources=sources,
+            keywords=keywords,
+            max_pages=args.max_pages,
+            strict_robots=not args.non_strict_robots,
+        )
+        mentions = scraper.run()
+        new_cleaned = [mention.asdict() for mention in mentions]
+        new_raw = [{field: row.get(field, "") for field in RAW_MENTION_FIELDS} for row in new_cleaned]
 
-    if args.append:
-        raw_rows = read_csv(out_dir / "raw_listings.csv") + new_raw
-        cleaned_rows = read_csv(out_dir / "cleaned_listings.csv") + new_cleaned
+        if args.append:
+            raw_rows = read_csv(out_dir / "raw_mentions.csv") + new_raw
+            cleaned_rows = read_csv(out_dir / "cleaned_mentions.csv") + new_cleaned
+        else:
+            raw_rows = new_raw
+            cleaned_rows = new_cleaned
+
+        cleaned_rows = dedupe_mentions(cleaned_rows)
+        raw_by_url = {row.get("discussion_url", ""): row for row in raw_rows if row.get("discussion_url")}
+        raw_rows = [
+            {field: raw_by_url.get(row.get("discussion_url", ""), row).get(field, "") for field in RAW_MENTION_FIELDS}
+            for row in cleaned_rows
+        ]
+        cleaned_rows = [{field: row.get(field, "") for field in CLEANED_MENTION_FIELDS} for row in cleaned_rows]
+        write_mention_outputs(out_dir, raw_rows, cleaned_rows)
+        print(f"Wrote {len(cleaned_rows)} deduped public mentions to {out_dir}")
     else:
-        raw_rows = new_raw
-        cleaned_rows = new_cleaned
+        scraper = RadarScraper(
+            sources=sources,
+            keywords=keywords,
+            max_pages=args.max_pages,
+            fetch_details=not args.no_fetch_details,
+            strict_robots=not args.non_strict_robots,
+            renderer=args.renderer,
+        )
+        listings = scraper.run()
+        new_cleaned = [listing.asdict() for listing in listings]
+        new_raw = [{field: row.get(field, "") for field in RAW_FIELDS} for row in new_cleaned]
 
-    cleaned_rows = dedupe_rows(cleaned_rows)
-    raw_by_url = {row.get("listing_url", ""): row for row in raw_rows if row.get("listing_url")}
-    raw_rows = [
-        {field: raw_by_url.get(row.get("listing_url", ""), row).get(field, "") for field in RAW_FIELDS}
-        for row in cleaned_rows
-    ]
-    cleaned_rows = [{field: row.get(field, "") for field in CLEANED_FIELDS} for row in cleaned_rows]
-    write_outputs(out_dir, raw_rows, cleaned_rows)
+        if args.append:
+            raw_rows = read_csv(out_dir / "raw_listings.csv") + new_raw
+            cleaned_rows = read_csv(out_dir / "cleaned_listings.csv") + new_cleaned
+        else:
+            raw_rows = new_raw
+            cleaned_rows = new_cleaned
+
+        cleaned_rows = dedupe_rows(cleaned_rows)
+        raw_by_url = {row.get("listing_url", ""): row for row in raw_rows if row.get("listing_url")}
+        raw_rows = [
+            {field: raw_by_url.get(row.get("listing_url", ""), row).get(field, "") for field in RAW_FIELDS}
+            for row in cleaned_rows
+        ]
+        cleaned_rows = [{field: row.get(field, "") for field in CLEANED_FIELDS} for row in cleaned_rows]
+        write_outputs(out_dir, raw_rows, cleaned_rows)
+        print(f"Wrote {len(cleaned_rows)} deduped supply references to {out_dir}")
+
     if args.dashboard:
         generate_dashboard(out_dir, out_dir / args.dashboard_file)
-
-    print(f"Wrote {len(cleaned_rows)} deduped listings to {out_dir}")
 
 
 if __name__ == "__main__":
