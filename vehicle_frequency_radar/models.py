@@ -28,3 +28,26 @@ class Listing:
 
     def asdict(self) -> dict[str, Union[str, float, None]]:
         return asdict(self)
+
+
+@dataclass
+class Mention:
+    scrape_date: str
+    scrape_week: str
+    country: str
+    source: str
+    source_type: str
+    search_keyword: str
+    matched_model: str
+    mention_title: str
+    mention_text_raw: str
+    author_or_channel: str
+    published_time: str
+    discussion_url: str
+    related_keywords: str
+    trader_signal_keywords: str
+    title_normalized: str = ""
+    dedupe_key_text_url: str = ""
+
+    def asdict(self) -> dict[str, str]:
+        return asdict(self)
