@@ -1,0 +1,5 @@
+country,source,source_type,base_url,url_template,min_delay_seconds,enabled,api_key_env
+Algeria,YouTube Algeria vehicle import,youtube_search_api,https://www.youtube.com,https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=25&order=date&q={query}%20Algeria%20voiture%20import&key={api_key},4,false,YOUTUBE_API_KEY
+Morocco,YouTube Morocco vehicle import,youtube_search_api,https://www.youtube.com,https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=25&order=date&q={query}%20Maroc%20voiture%20import&key={api_key},4,false,YOUTUBE_API_KEY
+Libya,YouTube Libya vehicle import,youtube_search_api,https://www.youtube.com,https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=25&order=date&q={query}%20Libya%20cars%20import&key={api_key},4,false,YOUTUBE_API_KEY
+Algeria,Public dealer search example,public_html,https://example.com,https://example.com/search?q={query}&page={page},4,false,
