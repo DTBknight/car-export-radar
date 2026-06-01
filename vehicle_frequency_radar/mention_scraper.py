@@ -93,6 +93,8 @@ class MentionScraper:
 def parse_discussion_results(text: str, source: DiscussionSourceSpec) -> list[dict[str, str]]:
     if source.source_type == "reddit_search":
         return _parse_reddit_search(text, source.base_url)
+    if source.source_type == "youtube_search_api":
+        return _parse_youtube_search(text)
     return _parse_public_html(text, source.base_url)
 
 
@@ -116,6 +118,32 @@ def _parse_reddit_search(text: str, base_url: str) -> list[dict[str, str]]:
                 "author": str(data.get("author") or ""),
                 "published_time": _utc_from_timestamp(created),
                 "url": compact_url(urljoin(base_url, permalink)),
+            }
+        )
+    return _unique(rows)
+
+
+def _parse_youtube_search(text: str) -> list[dict[str, str]]:
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError:
+        return []
+
+    rows: list[dict[str, str]] = []
+    for item in payload.get("items", []):
+        snippet = item.get("snippet", {})
+        video_id = item.get("id", {}).get("videoId")
+        if not video_id:
+            continue
+        title = _clean(snippet.get("title", ""))
+        description = _clean(snippet.get("description", ""))
+        rows.append(
+            {
+                "title": title,
+                "text": _clean(f"{title} {description}"),
+                "author": str(snippet.get("channelTitle") or ""),
+                "published_time": str(snippet.get("publishedAt") or ""),
+                "url": f"https://www.youtube.com/watch?v={video_id}",
             }
         )
     return _unique(rows)
