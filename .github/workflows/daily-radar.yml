@@ -27,17 +27,27 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run respectful scrape
-        env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           python -m vehicle_frequency_radar \
             --mode mentions \
             --out data/latest \
             --max-pages 1 \
             --discussion-source-file config/discussion_sources.csv \
-            --source "YouTube Algeria vehicle import" \
-            --source "YouTube Morocco vehicle import" \
-            --source "YouTube Libya vehicle import"
+            --source "Wandaloo MG forum" \
+            --source "Wandaloo Geely forum" \
+            --source "Wandaloo Chery forum" \
+            --source "Wandaloo Changan forum" \
+            --source "Wandaloo Jetour forum" \
+            --source "Moteur Morocco forum" \
+            --source "Moteur Chinese cars thread" \
+            --source "MG Club Maroc forum" \
+            --source "Tomobila Morocco forum" \
+            --source "Algerie DZ auto economy forum" \
+            --source "Algerie DZ Chinese cars thread" \
+            --source "SkyscraperCity Algeria Chery thread" \
+            --source "SkyscraperCity Algeria Jetour thread" \
+            --source "Expat Libya car buying forum" \
+            --source "Expat Libya cars forum"
 
       - name: Build site JSON
         run: |

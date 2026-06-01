@@ -1,4 +1,16 @@
 country,source,source_type,base_url,url_template,min_delay_seconds,enabled,api_key_env
-Algeria,YouTube Algeria vehicle import,youtube_search_api,https://www.youtube.com,https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=25&order=date&q={query}%20Algeria%20voiture%20import&key={api_key},4,true,YOUTUBE_API_KEY
-Morocco,YouTube Morocco vehicle import,youtube_search_api,https://www.youtube.com,https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=25&order=date&q={query}%20Maroc%20voiture%20import&key={api_key},4,true,YOUTUBE_API_KEY
-Libya,YouTube Libya vehicle import,youtube_search_api,https://www.youtube.com,https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=25&order=date&q={query}%20Libya%20cars%20import&key={api_key},4,true,YOUTUBE_API_KEY
+Morocco,Wandaloo MG forum,public_html,https://www.wandaloo.com,https://www.wandaloo.com/forum/mg/,6,true,
+Morocco,Wandaloo Geely forum,public_html,https://www.wandaloo.com,https://www.wandaloo.com/forum/geely/,6,true,
+Morocco,Wandaloo Chery forum,public_html,https://www.wandaloo.com,https://www.wandaloo.com/forum/chery/,6,true,
+Morocco,Wandaloo Changan forum,public_html,https://www.wandaloo.com,https://www.wandaloo.com/forum/changan/,6,true,
+Morocco,Wandaloo Jetour forum,public_html,https://www.wandaloo.com,https://www.wandaloo.com/forum/jetour/,6,true,
+Morocco,Moteur Morocco forum,public_html,https://www.moteur.ma,https://www.moteur.ma/fr/forum/,6,true,
+Morocco,Moteur Chinese cars thread,public_html,https://www.moteur.ma,https://www.moteur.ma/fr/forum/voiture-automobile-bagnole/144453%2Cproblemes-connus-des-voitures-chinoises-chery-haval-mg-geely-byd.html,6,true,
+Morocco,MG Club Maroc forum,public_html,https://mgclub.ma,https://mgclub.ma/search.php?keywords={query}&terms=all&author=&sc=1&sf=all&sr=posts&sk=t&sd=d&st=0&ch=300&t=0&submit=Rechercher,6,true,
+Morocco,Tomobila Morocco forum,public_html,https://www.tomobila.ma,https://www.tomobila.ma/forum-voiture-maroc/?s={query},6,true,
+Algeria,Algerie DZ auto economy forum,public_html,https://www.algerie-dz.com,https://www.algerie-dz.com/forums/economie/,6,true,
+Algeria,Algerie DZ Chinese cars thread,public_html,https://www.algerie-dz.com,https://www.algerie-dz.com/forums/economie/107553-les-voitures-chinoises-fabriqu%C3%A9s-en-alg%C3%A9rie-ne-laisse-pas-indiff%C3%A9rents-les-tunisiens,6,true,
+Algeria,SkyscraperCity Algeria Chery thread,public_html,https://www.skyscrapercity.com,https://www.skyscrapercity.com/threads/setif-cars-tech-iris-omoda-jaecoo-chery-50-000-v-y-23-ha-1200-jobs.2436754/,8,true,
+Algeria,SkyscraperCity Algeria Jetour thread,public_html,https://www.skyscrapercity.com,https://www.skyscrapercity.com/threads/batna-fondal-sns-jetour-chery-jv-270-000-v-y-105-millions.2436742/,8,true,
+Libya,Expat Libya car buying forum,public_html,https://www.expat.com,https://www.expat.com/forum/viewtopic.php?id=38951,6,true,
+Libya,Expat Libya cars forum,public_html,https://www.expat.com,https://www.expat.com/forum/viewtopic.php?id=64688,6,true,

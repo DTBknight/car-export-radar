@@ -152,7 +152,12 @@ def _parse_youtube_search(text: str) -> list[dict[str, str]]:
 def _parse_public_html(text: str, base_url: str) -> list[dict[str, str]]:
     soup = BeautifulSoup(text, "html.parser")
     rows: list[dict[str, str]] = []
-    for node in soup.select("article, main, [class*='post'], [class*='card'], a[href]"):
+    forum_nodes = soup.select(
+        "article, [class*='post'], [class*='comment'], [class*='reply'], "
+        "[class*='message'], [class*='topic'], [class*='thread'], [id*='post']"
+    )
+    nodes = forum_nodes or soup.select("main, [class*='card'], a[href]")
+    for node in nodes:
         raw = _clean(node.get_text(" ", strip=True))
         if len(raw) < 30:
             continue
