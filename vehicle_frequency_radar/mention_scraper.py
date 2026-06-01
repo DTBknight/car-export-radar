@@ -30,8 +30,8 @@ class MentionScraper:
         max_pages: int = 1,
         strict_robots: bool = True,
     ) -> None:
-        self.sources = sources or DISCUSSION_SOURCES
-        self.keywords = keywords or SEARCH_KEYWORDS
+        self.sources = DISCUSSION_SOURCES if sources is None else sources
+        self.keywords = SEARCH_KEYWORDS if keywords is None else keywords
         self.max_pages = max_pages
         self.fetcher = Fetcher(strict_robots=strict_robots)
 

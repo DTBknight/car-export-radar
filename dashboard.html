@@ -186,7 +186,7 @@
         </thead>
         <tbody id="rankingBody"></tbody>
       </table>
-      <div id="emptyState" class="empty" hidden>暂无可展示的讨论数据。请等待每日抓取任务完成，或手动运行 GitHub Actions。</div>
+      <div id="emptyState" class="empty" hidden>本次讨论热度采集为 0 条。请检查是否已配置 YouTube API Key，或数据来源是否被 robots.txt 阻止；旧车源数量不会在这里混合展示。</div>
     </div>
 
     <div class="subgrid">
@@ -197,7 +197,7 @@
       <div class="panel">
         <h2>数据说明</h2>
         <div class="empty" style="padding:0;text-align:left">
-          页面读取 <code>data/latest.json</code>。每条公开提及都保留证据链接，点击“查看证据”可核验原文标题、发布时间和来源。这里不做机会评分，也不做业务推荐。
+          页面读取 <code>data/latest.json</code>。每条公开提及都保留证据链接，点击“查看证据”可核验原文标题、发布时间和来源。这里展示的是讨论热度，不混用卖车页面数量，也不做机会评分或业务推荐。
         </div>
       </div>
     </div>
@@ -223,9 +223,9 @@
     }
 
     function buildRows(data) {
-      const modelRows = (data.model_heat && data.model_heat.length) ? data.model_heat : data.model_frequency || [];
-      const weeklyRows = (data.heat_change && data.heat_change.length) ? data.heat_change : data.weekly_change || [];
-      const mentionRows = (data.cleaned_mentions && data.cleaned_mentions.length) ? data.cleaned_mentions : data.cleaned_sources || [];
+      const modelRows = data.model_heat || [];
+      const weeklyRows = data.heat_change || [];
+      const mentionRows = data.cleaned_mentions || [];
       const weekly = new Map(weeklyRows.map(row => [key(row), row]));
       const sourcesByModel = new Map();
       for (const source of mentionRows) {
@@ -256,7 +256,7 @@
       });
       renderSummary(filtered);
       renderTable(filtered);
-      renderKeywords((payload.trader_frequency && payload.trader_frequency.length) ? payload.trader_frequency : payload.related_frequency || []);
+      renderKeywords(payload.trader_frequency || []);
     }
 
     function renderSummary(dataRows) {

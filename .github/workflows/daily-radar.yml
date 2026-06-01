@@ -27,11 +27,17 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run respectful scrape
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           python -m vehicle_frequency_radar \
             --mode mentions \
             --out data/latest \
-            --max-pages 1
+            --max-pages 1 \
+            --discussion-source-file config/discussion_sources.csv \
+            --source "YouTube Algeria vehicle import" \
+            --source "YouTube Morocco vehicle import" \
+            --source "YouTube Libya vehicle import"
 
       - name: Build site JSON
         run: |

@@ -98,6 +98,10 @@ def main() -> None:
     if args.country:
         wanted_countries = {value.lower() for value in args.country}
         sources = [source for source in sources if source.country.lower() in wanted_countries]
+    if args.mode == "mentions" and not sources:
+        logging.warning(
+            "No discussion sources are enabled. Check --source filters, config/discussion_sources.csv, and API key secrets."
+        )
 
     keywords = args.keyword or SEARCH_KEYWORDS
     out_dir = Path(args.out)

@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import csv
+import logging
 import os
 from pathlib import Path
 from urllib.parse import quote_plus
 
 from .config import DiscussionSourceSpec
+
+LOGGER = logging.getLogger(__name__)
 
 
 def load_discussion_sources(path: Path) -> list[DiscussionSourceSpec]:
@@ -24,6 +27,11 @@ def load_discussion_sources(path: Path) -> list[DiscussionSourceSpec]:
             api_key_env = str(row.get("api_key_env") or "").strip()
             api_key = os.environ.get(api_key_env, "") if api_key_env else ""
             if "{api_key}" in template and not api_key:
+                LOGGER.warning(
+                    "Skipped source %s because environment variable %s is not set",
+                    row.get("source") or template,
+                    api_key_env,
+                )
                 continue
             sources.append(
                 DiscussionSourceSpec(
