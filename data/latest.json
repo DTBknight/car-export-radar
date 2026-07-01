@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generated_at": "2026-06-30T06:56:21.149228+00:00",
+    "generated_at": "2026-07-01T07:08:40.390316+00:00",
     "source_directory": "data/latest",
     "row_counts": {
       "model_heat": 5,
       "heat_change": 5,
       "trader_frequency": 5,
       "source_coverage": 4,
-      "evidence_samples": 9,
-      "cleaned_mentions": 12,
-      "raw_mentions": 12,
+      "evidence_samples": 8,
+      "cleaned_mentions": 11,
+      "raw_mentions": 11,
       "model_frequency": 11,
       "weekly_change": 11,
       "related_frequency": 42,
@@ -26,7 +26,7 @@
       "mention_count": "6",
       "trader_signal_count": "0",
       "unique_url_count": "6",
-      "latest_seen": "2026-06-30",
+      "latest_seen": "2026-07-01",
       "search_keywords": "Changan X5 Plus; MG5"
     },
     {
@@ -36,17 +36,17 @@
       "mention_count": "2",
       "trader_signal_count": "0",
       "unique_url_count": "2",
-      "latest_seen": "2026-06-30",
+      "latest_seen": "2026-07-01",
       "search_keywords": "MG5"
     },
     {
       "country": "Morocco",
       "source": "Wandaloo Chery forum",
       "matched_model": "Chery Tiggo 4 Pro",
-      "mention_count": "2",
+      "mention_count": "1",
       "trader_signal_count": "1",
-      "unique_url_count": "2",
-      "latest_seen": "2026-06-30",
+      "unique_url_count": "1",
+      "latest_seen": "2026-07-01",
       "search_keywords": "MG5"
     },
     {
@@ -56,7 +56,7 @@
       "mention_count": "1",
       "trader_signal_count": "1",
       "unique_url_count": "1",
-      "latest_seen": "2026-06-30",
+      "latest_seen": "2026-07-01",
       "search_keywords": "MG5"
     },
     {
@@ -66,7 +66,7 @@
       "mention_count": "1",
       "trader_signal_count": "1",
       "unique_url_count": "1",
-      "latest_seen": "2026-06-30",
+      "latest_seen": "2026-07-01",
       "search_keywords": "MG5"
     }
   ],
@@ -96,9 +96,9 @@
       "country": "Morocco",
       "source": "Wandaloo Chery forum",
       "matched_model": "Chery Tiggo 4 Pro",
-      "mention_count": "2",
+      "mention_count": "1",
       "previous_week_count": "0",
-      "absolute_change": "2",
+      "absolute_change": "1",
       "pct_change": ""
     },
     {
@@ -172,8 +172,8 @@
       "country": "Morocco",
       "source": "Wandaloo Chery forum",
       "source_type": "public_html",
-      "mention_count": "2",
-      "unique_url_count": "2",
+      "mention_count": "1",
+      "unique_url_count": "1",
       "matched_model_count": "1"
     },
     {
@@ -200,7 +200,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=1051142d3f157d753513bc72acb757d7",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65",
       "trader_signal_keywords": ""
     },
     {
@@ -209,7 +209,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p40",
       "trader_signal_keywords": ""
     },
     {
@@ -218,7 +218,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Comment fonctionne une voiture MG 100% électrique ? Explication simple",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p33",
       "trader_signal_keywords": ""
     },
     {
@@ -227,7 +227,7 @@
       "matched_model": "MG5",
       "mention_title": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p26",
       "trader_signal_keywords": ""
     },
     {
@@ -236,26 +236,17 @@
       "matched_model": "MG5",
       "mention_title": "Présentation de la MG5 — la berline compacte accessible de MG",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p21",
       "trader_signal_keywords": ""
     },
     {
       "country": "Morocco",
       "source": "Wandaloo Chery forum",
       "matched_model": "Chery Tiggo 4 Pro",
-      "mention_title": "TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommati",
+      "mention_title": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qu",
       "published_time": "",
-      "discussion_url": "https://www.wandaloo.com/forum/chery/tiggo-4-pro/#avis",
+      "discussion_url": "https://www.wandaloo.com/occasion/voiture-occasion-maroc-argus/28,1688,1,49500,2022/21304.html",
       "trader_signal_keywords": "concessionnaire"
-    },
-    {
-      "country": "Morocco",
-      "source": "Wandaloo Chery forum",
-      "matched_model": "Chery Tiggo 4 Pro",
-      "mention_title": "Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand l",
-      "published_time": "",
-      "discussion_url": "https://www.wandaloo.com",
-      "trader_signal_keywords": ""
     },
     {
       "country": "Morocco",
@@ -278,7 +269,7 @@
   ],
   "cleaned_mentions": [
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "Wandaloo MG forum",
@@ -286,7 +277,7 @@
       "search_keyword": "MG5",
       "matched_model": "MG ZS",
       "mention_title": "Pas d'hybride ni hybride rechargeable ? hey el arabia - le 17 octobre 2025 Donc au maroc la MG hs n'est pas pas proposée en hybride ni en PH",
-      "mention_text_raw": "Pas d'hybride ni hybride rechargeable ? hey el arabia - le 17 octobre 2025 Donc au maroc la MG hs n'est pas pas proposée en hybride ni en PHEV c'est très dommage car elle aurait été très intéressante et ces deux modèles sont proposés en Europe 8 6 répondre Mieux que le duster hey el arabia - le 19 juillet 2025 C'est un très bon prix je trouve qu'elle est mieux que le duster et que la yaris cross elle a un très grand succès ailleurs son seul problème c'est quand il y a des montées raides et le moteur électrique est épuisé elle peut râler un peu mais c'est pas grave vu le confort la tenue de route et la finition elle est hyper intéressante vu son prix et n'oublions pas la garantie de 200 000 km 24 22 répondre 1 réponse(s) Vos retours ? Wisal Moha - le 30 juin 2025 Bonjour à tous, Avis propriétaires MG3 Hybrid+ Êtes-vous satisfaits ? Avez-vous rencontré des problèmes de fiabilité ou électroniques ? Que pensez-vous du SAV MG ? Sérieux, délai des pièces, suivi ? Est-ce que les pièces de rechange sont faciles à obtenir ou vous avez eu des attentes ? J’hésite aussi avec la Toyota Yaris Hybrid, mais je préfère l’espace et le design de la MG 22 14 répondre 1 réponse(s) MG HS PHEV Bouch Driss - le 10 juin 2025 J'ai visité le concessionnaire MG sur la route de Casablanca à Marrakech. Le commercial a confirmé que la MG HS PHEV (hybride rechargeable) n'est actuellement pas disponible. 11 3 répondre Mg3 ou yaris Nana - le 22 mars 2025 3endi choix bine yaris ô Mg 3, fine Li fiha performance et économie. 15 20 répondre 2 réponse(s) Mg 3 hybride+ Akh mus - le 19 mars 2025 Top auto hybride 195cv 32 12 répondre ZS hybrid+ hey el arabia - le 24 novembre 2024 J'aimerais savoir la date de commercialisation de la MG ZS hybride+ qui paraît très intéressante et à un prix moins cher que le duster nouveau de dacia ! 35 7 répondre Mg3 hybride Anas EL KSABI - le 30 septembre 2024 Bonjour, Quelqu'un aurait une idée de la date de commercialisation du MG3 hybride plus dans le royaume ? 22 9 répondre Puissance fiscale erronée lire 9cv Sultan R - le 7 juillet 2023 Bonjour, Il ya une erreur sur la puissance fiscale C'est 9cv au lieu de 7cv 33 13 répondre Erreur sur la puissance fiscale Sultan R - le 7 juillet 2023 Bonjour, Il ya une erreur sur la puissance fiscale C'est 9cv au lieu de 7cv 11 3 répondre",
+      "mention_text_raw": "Pas d'hybride ni hybride rechargeable ? hey el arabia - le 17 octobre 2025 Donc au maroc la MG hs n'est pas pas proposée en hybride ni en PHEV c'est très dommage car elle aurait été très intéressante et ces deux modèles sont proposés en Europe 8 6 répondre Mieux que le duster hey el arabia - le 19 juillet 2025 C'est un très bon prix je trouve qu'elle est mieux que le duster et que la yaris cross elle a un très grand succès ailleurs son seul problème c'est quand il y a des montées raides et le moteur électrique est épuisé elle peut râler un peu mais c'est pas grave vu le confort la tenue de route et la finition elle est hyper intéressante vu son prix et n'oublions pas la garantie de 200 000 km 24 22 répondre 1 réponse(s) Vos retours ? Wisal Moha - le 30 juin 2025 Bonjour à tous, Avis propriétaires MG3 Hybrid+ Êtes-vous satisfaits ? Avez-vous rencontré des problèmes de fiabilité ou électroniques ? Que pensez-vous du SAV MG ? Sérieux, délai des pièces, suivi ? Est-ce que les pièces de rechange sont faciles à obtenir ou vous avez eu des attentes ? J’hésite aussi avec la Toyota Yaris Hybrid, mais je préfère l’espace et le design de la MG 22 14 répondre 1 réponse(s) MG HS PHEV Bouch Driss - le 10 juin 2025 J'ai visité le concessionnaire MG sur la route de Casablanca à Marrakech. Le commercial a confirmé que la MG HS PHEV (hybride rechargeable) n'est actuellement pas disponible. 11 3 répondre Mg3 ou yaris Nana - le 22 mars 2025 3endi choix bine yaris ô Mg 3, fine Li fiha performance et économie. 15 20 répondre 2 réponse(s) Mg 3 hybride+ Akh mus - le 19 mars 2025 Top auto hybride 195cv 32 12 répondre ZS hybrid+ hey el arabia - le 24 novembre 2024 J'aimerais savoir la date de commercialisation de la MG ZS hybride+ qui paraît très intéressante et à un prix moins cher que le duster nouveau de dacia ! 35 7 répondre Mg3 hybride Anas EL KSABI - le 30 septembre 2024 Bonjour, Quelqu'un aurait une idée de la date de commercialisation du MG3 hybride plus dans le royaume ? 22 9 répondre Puissance fiscale erronée lire 9cv Sultan R - le 7 juillet 2023 Bonjour, Il ya une erreur sur la puissance fiscale C'est 9cv au lieu de 7cv 34 13 répondre Erreur sur la puissance fiscale Sultan R - le 7 juillet 2023 Bonjour, Il ya une erreur sur la puissance fiscale C'est 9cv au lieu de 7cv 11 3 répondre",
       "author_or_channel": "",
       "published_time": "",
       "discussion_url": "https://www.wandaloo.com/neuf/mg/hs/#avis",
@@ -296,7 +287,7 @@
       "dedupe_key_text_url": "https://www.wandaloo.com/neuf/mg/hs/#avis|pas d hybride ni hybride rechargeable hey el arabia le 17 octobre 2025 donc au maroc la mg hs n est pas pas proposee en hybride ni en ph pas d hybride ni hybride rechargeable hey el arabia le 17 octobre 2025 donc au maro"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "Wandaloo Geely forum",
@@ -314,43 +305,25 @@
       "dedupe_key_text_url": "https://www.wandaloo.com/forum/geely/ex5-phev/#avis|embarras de choix said oubejja le 2 fevrier 2026 bonjour mrs avec un budget de 350 000 dh pour acquerir une geely ex5 n est il pas op embarras de choix said oubejja le 2 fevrier 2026 bonjour mrs avec un budget de 350 000"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "Wandaloo Chery forum",
       "source_type": "public_html",
       "search_keyword": "MG5",
       "matched_model": "Chery Tiggo 4 Pro",
-      "mention_title": "TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommati",
-      "mention_text_raw": "TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier ! 59 29 répondre 1 réponse(s) Affichage température ambiante Chamsi - le 4 novembre 2023 Bonjour, es ce qq1 aurait une idée sur l’affichage de la température ambiante sur le tableau de bord de la tiggo 7 pro. Merci 27 12 répondre Promotions incroyables Hyacinthe Vlavonou - le 16 septembre 2023 Ils font de très belles promotion actuellement sur les différentes gamme où la 2 pro Toute Option à 168.000 Clé en main La 4 pro Toute option à 227.000dhs Clé en main Cette promotion dure jusqu'à fin du mois de septembre d'après le concessionnaire. 38 25 répondre Puissance et bva Mohamed amine - le 3 juin 2023 En ayant la fiche technique du constructeur , j'ai pu constaté : -la puissancebmentionnée dans la fiche est 187cv et non pas 254. - le moteur est effectivement un 2l. L'équipe wandaloo j'aimerai bien avoir plus d'infos sur la bva , est- ce une cvt ou une automatique à convertisseur de couple ou une robotisée à double embrayage sec ou humide. 32 26 répondre AVIS SUR CHERY TIGGO 7 PRO Assane Dabre - le 1 octobre 2022 Quel est votre avis sur Tiggo 7 pro ? Bonne affaire ou non ? Merci 141 51 répondre 1 réponse(s) pièces de rechange QQ ? jam - le 9 octobre 2014 SVP ou est ce qu'on peux trouver des pieces de rechanges du chery QQ au maroc ??? merci 72 45 répondre 5 réponse(s) Chery a113 Ilyana .J - le 25 septembre 2020 Bonjour . Quelqu’un peut m’aider a trouver des concessionnaires De chery a casablanca ,oubien s’il ya un distributeur parmis vous qui px m aider j’ai besoin d’un ECU( engine controle unit) j’arrive pas a trouver la meme référence. Ma voiture que j acheter depuis un mois et en panne pour 15 jours mnt . Merci en avance 10 8 répondre 1 réponse(s)",
+      "mention_title": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qu",
+      "mention_text_raw": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qui n'est pas du tout correcte ni a jour 0 0 répondre TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier ! 59 29 répondre 1 réponse(s) Affichage température ambiante Chamsi - le 4 novembre 2023 Bonjour, es ce qq1 aurait une idée sur l’affichage de la température ambiante sur le tableau de bord de la tiggo 7 pro. Merci 27 12 répondre Promotions incroyables Hyacinthe Vlavonou - le 16 septembre 2023 Ils font de très belles promotion actuellement sur les différentes gamme où la 2 pro Toute Option à 168.000 Clé en main La 4 pro Toute option à 227.000dhs Clé en main Cette promotion dure jusqu'à fin du mois de septembre d'après le concessionnaire. 38 25 répondre Puissance et bva Mohamed amine - le 3 juin 2023 En ayant la fiche technique du constructeur , j'ai pu constaté : -la puissancebmentionnée dans la fiche est 187cv et non pas 254. - le moteur est effectivement un 2l. L'équipe wandaloo j'aimerai bien avoir plus d'infos sur la bva , est- ce une cvt ou une automatique à convertisseur de couple ou une robotisée à double embrayage sec ou humide. 32 26 répondre AVIS SUR CHERY TIGGO 7 PRO Assane Dabre - le 1 octobre 2022 Quel est votre avis sur Tiggo 7 pro ? Bonne affaire ou non ? Merci 141 51 répondre 1 réponse(s) pièces de rechange QQ ? jam - le 9 octobre 2014 SVP ou est ce qu'on peux trouver des pieces de rechanges du chery QQ au maroc ??? merci 72 45 répondre 5 réponse(s) Chery a113 Ilyana .J - le 25 septembre 2020 Bonjour . Quelqu’un peut m’aider a trouver des concessionnaires De chery a casablanca ,oubien s’il ya un distributeur parmis vous qui px m aider j’ai besoin d’un ECU( engine controle unit) j’arrive pas a trouver la meme référence. Ma voiture que j acheter depuis un mois et en panne pour 15 jours mnt . Merci en avance 10 8 répondre 1 réponse(s)",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://www.wandaloo.com/forum/chery/tiggo-4-pro/#avis",
-      "related_keywords": "2025;automatique",
+      "discussion_url": "https://www.wandaloo.com/occasion/voiture-occasion-maroc-argus/28,1688,1,49500,2022/21304.html",
+      "related_keywords": "2025;2026;automatique;neuf",
       "trader_signal_keywords": "concessionnaire",
-      "title_normalized": "tiggo 4 pro abel kribi le 9 mars 2025 je suis tres decu de l acquisition en septembre 2024 de la nouvelle chery tiggo4 pro consommati",
-      "dedupe_key_text_url": "https://www.wandaloo.com/forum/chery/tiggo-4-pro/#avis|tiggo 4 pro abel kribi le 9 mars 2025 je suis tres decu de l acquisition en septembre 2024 de la nouvelle chery tiggo4 pro consommati tiggo 4 pro abel kribi le 9 mars 2025 je suis tres decu de l acquisition en septembre "
+      "title_normalized": "cote d occasion et prix voiture neuve iliasse le 30 juin 2026 la cote d occasion et n importe quoi vous base sur des prix de vente neuf qu",
+      "dedupe_key_text_url": "https://www.wandaloo.com/occasion/voiture-occasion-maroc-argus/28,1688,1,49500,2022/21304.html|cote d occasion et prix voiture neuve iliasse le 30 juin 2026 la cote d occasion et n importe quoi vous base sur des prix de vente neuf qu cote d occasion et prix voiture neuve iliasse le 30 juin 2026 la cote d occasion "
     },
     {
-      "scrape_date": "2026-06-30",
-      "scrape_week": "2026-W27",
-      "country": "Morocco",
-      "source": "Wandaloo Chery forum",
-      "source_type": "public_html",
-      "search_keyword": "MG5",
-      "matched_model": "Chery Tiggo 4 Pro",
-      "mention_title": "Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand l",
-      "mention_text_raw": "Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier !",
-      "author_or_channel": "",
-      "published_time": "",
-      "discussion_url": "https://www.wandaloo.com",
-      "related_keywords": "",
-      "trader_signal_keywords": "",
-      "title_normalized": "je suis tres decu de l acquisition en septembre 2024 de la nouvelle chery tiggo4 pro consommation excessive a 10 8 a 11 2 l 100 quand l",
-      "dedupe_key_text_url": "https://www.wandaloo.com|je suis tres decu de l acquisition en septembre 2024 de la nouvelle chery tiggo4 pro consommation excessive a 10 8 a 11 2 l 100 quand l je suis tres decu de l acquisition en septembre 2024 de la nouvelle chery tiggo4 pro"
-    },
-    {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -358,17 +331,17 @@
       "search_keyword": "MG5",
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
-      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 132 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
+      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 134 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=1051142d3f157d753513bc72acb757d7",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65",
       "related_keywords": "2026",
       "trader_signal_keywords": "",
       "title_normalized": "prix mg maroc 2026 tous les modeles tarifs et versions disponibles",
-      "dedupe_key_text_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=1051142d3f157d753513bc72acb757d7|prix mg maroc 2026 tous les modeles tarifs et versions disponibles par mehdi b 15 mai 2026 01 05 forum configurations prix sujet prix mg maroc 2026 tous les modeles tarifs et versions disponibles reponses 0 vues 132 prix"
+      "dedupe_key_text_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65|prix mg maroc 2026 tous les modeles tarifs et versions disponibles par mehdi b 15 mai 2026 01 05 forum configurations prix sujet prix mg maroc 2026 tous les modeles tarifs et versions disponibles reponses 0 vues 134 prix"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -379,14 +352,14 @@
       "mention_text_raw": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p40",
       "related_keywords": "2026",
       "trader_signal_keywords": "",
       "title_normalized": "prix mg maroc 2026 tous les modeles tarifs et versions disponibles",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p40|prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix public indicatif a partir de 169 000 dh mg3 hybrid motorisation hybride prix publ"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p40|prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix public indicatif a partir de 169 000 dh mg3 hybrid motorisation hybride prix publ"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -397,14 +370,14 @@
       "mention_text_raw": "Comment fonctionne une voiture MG 100% électrique ? Explication simple ... 100% électriques ? Selon les marchés, MG propose plusieurs modèles 100% électriques. On peut notamment citer : MG ZS EV ; MG4 Electric ; MG5 Electric selon les pays ; MG Marvel R ; MG Cyberster. Au Maroc, les modèles disponibles peuvent varier. Il est donc conseillé de vérifier ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p33",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "comment fonctionne une voiture mg 100 electrique explication simple",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p33|comment fonctionne une voiture mg 100 electrique explication simple comment fonctionne une voiture mg 100 electrique explication simple 100 electriques selon les marches mg propose plusieurs modeles 100 electriques on pe"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p33|comment fonctionne une voiture mg 100 electrique explication simple comment fonctionne une voiture mg 100 electrique explication simple 100 electriques selon les marches mg propose plusieurs modeles 100 electriques on pe"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -415,14 +388,14 @@
       "mention_text_raw": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG La MG Cyberster est l’un des modèles les plus spectaculaires de la gamme MG. Contrairement aux MG3, MG5 , ZS ou HS, elle ne vise pas le marché familial ou rationnel. C’est un roadster 100% électrique, pensé comme une vitrine technologique et sportive pour la marque. Au Maroc, la Cyberster permet ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p26",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "presentation de la mg cyberster le roadster electrique vitrine de mg",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p26|presentation de la mg cyberster le roadster electrique vitrine de mg presentation de la mg cyberster le roadster electrique vitrine de mg la mg cyberster est l un des modeles les plus spectaculaires de la gamme mg contra"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p26|presentation de la mg cyberster le roadster electrique vitrine de mg presentation de la mg cyberster le roadster electrique vitrine de mg la mg cyberster est l un des modeles les plus spectaculaires de la gamme mg contra"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -433,14 +406,14 @@
       "mention_text_raw": "Présentation de la MG5 — la berline compacte accessible de MG La MG5 est une berline compacte proposée au Maroc, pensée pour les conducteurs qui cherchent une voiture familiale simple, confortable et bien équipée, sans passer par un SUV. Elle se positionne comme une alternative intéressante pour ceux qui veulent une voiture neuve, automatique, avec un bon ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p21",
       "related_keywords": "automatique",
       "trader_signal_keywords": "",
       "title_normalized": "presentation de la mg5 la berline compacte accessible de mg",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p21|presentation de la mg5 la berline compacte accessible de mg presentation de la mg5 la berline compacte accessible de mg la mg5 est une berline compacte proposee au maroc pensee pour les conducteurs qui cherchent une voit"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p21|presentation de la mg5 la berline compacte accessible de mg presentation de la mg5 la berline compacte accessible de mg la mg5 est une berline compacte proposee au maroc pensee pour les conducteurs qui cherchent une voit"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -451,14 +424,14 @@
       "mention_text_raw": "L'arrivée de MG au Maroc — l'histoire d'un retour ... thermiques, hybrides rechargeables et 100% électriques. Parmi les modèles annoncés au lancement, on retrouvait notamment la MG ZS, la MG HS, la MG5 , la MG3, mais aussi des modèles électrifiés comme la MG4 Electric, la MG ZS EV, la MG HS PHEV et la MG Marvel R. Qui distribue MG au Maroc ? Au ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p17",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p17",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "l arrivee de mg au maroc l histoire d un retour",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p17|l arrivee de mg au maroc l histoire d un retour l arrivee de mg au maroc l histoire d un retour thermiques hybrides rechargeables et 100 electriques parmi les modeles annonces au lancement on retrouvait notamment la mg z"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p17|l arrivee de mg au maroc l histoire d un retour l arrivee de mg au maroc l histoire d un retour thermiques hybrides rechargeables et 100 electriques parmi les modeles annonces au lancement on retrouvait notamment la mg z"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -476,7 +449,7 @@
       "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=43&hilit=Changan+X5+Plus#p43|ventes mg au maroc en europe une marque encore jeune chez nous mais portee par une forte dynamique mondiale ventes mg au maroc en europe une marque encore jeune chez nous mais portee par une forte dynamique mondiale mg f"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -496,7 +469,7 @@
   ],
   "raw_mentions": [
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "Wandaloo MG forum",
@@ -504,7 +477,7 @@
       "search_keyword": "Hyundai Accent",
       "matched_model": "MG ZS",
       "mention_title": "Pas d'hybride ni hybride rechargeable ? hey el arabia - le 17 octobre 2025 Donc au maroc la MG hs n'est pas pas proposée en hybride ni en PH",
-      "mention_text_raw": "Pas d'hybride ni hybride rechargeable ? hey el arabia - le 17 octobre 2025 Donc au maroc la MG hs n'est pas pas proposée en hybride ni en PHEV c'est très dommage car elle aurait été très intéressante et ces deux modèles sont proposés en Europe 8 6 répondre Mieux que le duster hey el arabia - le 19 juillet 2025 C'est un très bon prix je trouve qu'elle est mieux que le duster et que la yaris cross elle a un très grand succès ailleurs son seul problème c'est quand il y a des montées raides et le moteur électrique est épuisé elle peut râler un peu mais c'est pas grave vu le confort la tenue de route et la finition elle est hyper intéressante vu son prix et n'oublions pas la garantie de 200 000 km 24 22 répondre 1 réponse(s) Vos retours ? Wisal Moha - le 30 juin 2025 Bonjour à tous, Avis propriétaires MG3 Hybrid+ Êtes-vous satisfaits ? Avez-vous rencontré des problèmes de fiabilité ou électroniques ? Que pensez-vous du SAV MG ? Sérieux, délai des pièces, suivi ? Est-ce que les pièces de rechange sont faciles à obtenir ou vous avez eu des attentes ? J’hésite aussi avec la Toyota Yaris Hybrid, mais je préfère l’espace et le design de la MG 22 14 répondre 1 réponse(s) MG HS PHEV Bouch Driss - le 10 juin 2025 J'ai visité le concessionnaire MG sur la route de Casablanca à Marrakech. Le commercial a confirmé que la MG HS PHEV (hybride rechargeable) n'est actuellement pas disponible. 11 3 répondre Mg3 ou yaris Nana - le 22 mars 2025 3endi choix bine yaris ô Mg 3, fine Li fiha performance et économie. 15 20 répondre 2 réponse(s) Mg 3 hybride+ Akh mus - le 19 mars 2025 Top auto hybride 195cv 32 12 répondre ZS hybrid+ hey el arabia - le 24 novembre 2024 J'aimerais savoir la date de commercialisation de la MG ZS hybride+ qui paraît très intéressante et à un prix moins cher que le duster nouveau de dacia ! 35 7 répondre Mg3 hybride Anas EL KSABI - le 30 septembre 2024 Bonjour, Quelqu'un aurait une idée de la date de commercialisation du MG3 hybride plus dans le royaume ? 22 9 répondre Puissance fiscale erronée lire 9cv Sultan R - le 7 juillet 2023 Bonjour, Il ya une erreur sur la puissance fiscale C'est 9cv au lieu de 7cv 33 13 répondre Erreur sur la puissance fiscale Sultan R - le 7 juillet 2023 Bonjour, Il ya une erreur sur la puissance fiscale C'est 9cv au lieu de 7cv 11 3 répondre",
+      "mention_text_raw": "Pas d'hybride ni hybride rechargeable ? hey el arabia - le 17 octobre 2025 Donc au maroc la MG hs n'est pas pas proposée en hybride ni en PHEV c'est très dommage car elle aurait été très intéressante et ces deux modèles sont proposés en Europe 8 6 répondre Mieux que le duster hey el arabia - le 19 juillet 2025 C'est un très bon prix je trouve qu'elle est mieux que le duster et que la yaris cross elle a un très grand succès ailleurs son seul problème c'est quand il y a des montées raides et le moteur électrique est épuisé elle peut râler un peu mais c'est pas grave vu le confort la tenue de route et la finition elle est hyper intéressante vu son prix et n'oublions pas la garantie de 200 000 km 24 22 répondre 1 réponse(s) Vos retours ? Wisal Moha - le 30 juin 2025 Bonjour à tous, Avis propriétaires MG3 Hybrid+ Êtes-vous satisfaits ? Avez-vous rencontré des problèmes de fiabilité ou électroniques ? Que pensez-vous du SAV MG ? Sérieux, délai des pièces, suivi ? Est-ce que les pièces de rechange sont faciles à obtenir ou vous avez eu des attentes ? J’hésite aussi avec la Toyota Yaris Hybrid, mais je préfère l’espace et le design de la MG 22 14 répondre 1 réponse(s) MG HS PHEV Bouch Driss - le 10 juin 2025 J'ai visité le concessionnaire MG sur la route de Casablanca à Marrakech. Le commercial a confirmé que la MG HS PHEV (hybride rechargeable) n'est actuellement pas disponible. 11 3 répondre Mg3 ou yaris Nana - le 22 mars 2025 3endi choix bine yaris ô Mg 3, fine Li fiha performance et économie. 15 20 répondre 2 réponse(s) Mg 3 hybride+ Akh mus - le 19 mars 2025 Top auto hybride 195cv 32 12 répondre ZS hybrid+ hey el arabia - le 24 novembre 2024 J'aimerais savoir la date de commercialisation de la MG ZS hybride+ qui paraît très intéressante et à un prix moins cher que le duster nouveau de dacia ! 35 7 répondre Mg3 hybride Anas EL KSABI - le 30 septembre 2024 Bonjour, Quelqu'un aurait une idée de la date de commercialisation du MG3 hybride plus dans le royaume ? 22 9 répondre Puissance fiscale erronée lire 9cv Sultan R - le 7 juillet 2023 Bonjour, Il ya une erreur sur la puissance fiscale C'est 9cv au lieu de 7cv 34 13 répondre Erreur sur la puissance fiscale Sultan R - le 7 juillet 2023 Bonjour, Il ya une erreur sur la puissance fiscale C'est 9cv au lieu de 7cv 11 3 répondre",
       "author_or_channel": "",
       "published_time": "",
       "discussion_url": "https://www.wandaloo.com/neuf/mg/hs/#avis",
@@ -512,7 +485,7 @@
       "trader_signal_keywords": "disponible;concessionnaire"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "Wandaloo Geely forum",
@@ -528,39 +501,23 @@
       "trader_signal_keywords": "china;showroom"
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "Wandaloo Chery forum",
       "source_type": "public_html",
       "search_keyword": "Hyundai Accent",
       "matched_model": "Chery Tiggo 4 Pro",
-      "mention_title": "TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommati",
-      "mention_text_raw": "TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier ! 59 29 répondre 1 réponse(s) Affichage température ambiante Chamsi - le 4 novembre 2023 Bonjour, es ce qq1 aurait une idée sur l’affichage de la température ambiante sur le tableau de bord de la tiggo 7 pro. Merci 27 12 répondre Promotions incroyables Hyacinthe Vlavonou - le 16 septembre 2023 Ils font de très belles promotion actuellement sur les différentes gamme où la 2 pro Toute Option à 168.000 Clé en main La 4 pro Toute option à 227.000dhs Clé en main Cette promotion dure jusqu'à fin du mois de septembre d'après le concessionnaire. 38 25 répondre Puissance et bva Mohamed amine - le 3 juin 2023 En ayant la fiche technique du constructeur , j'ai pu constaté : -la puissancebmentionnée dans la fiche est 187cv et non pas 254. - le moteur est effectivement un 2l. L'équipe wandaloo j'aimerai bien avoir plus d'infos sur la bva , est- ce une cvt ou une automatique à convertisseur de couple ou une robotisée à double embrayage sec ou humide. 32 26 répondre AVIS SUR CHERY TIGGO 7 PRO Assane Dabre - le 1 octobre 2022 Quel est votre avis sur Tiggo 7 pro ? Bonne affaire ou non ? Merci 141 51 répondre 1 réponse(s) pièces de rechange QQ ? jam - le 9 octobre 2014 SVP ou est ce qu'on peux trouver des pieces de rechanges du chery QQ au maroc ??? merci 72 45 répondre 5 réponse(s) Chery a113 Ilyana .J - le 25 septembre 2020 Bonjour . Quelqu’un peut m’aider a trouver des concessionnaires De chery a casablanca ,oubien s’il ya un distributeur parmis vous qui px m aider j’ai besoin d’un ECU( engine controle unit) j’arrive pas a trouver la meme référence. Ma voiture que j acheter depuis un mois et en panne pour 15 jours mnt . Merci en avance 10 8 répondre 1 réponse(s)",
+      "mention_title": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qu",
+      "mention_text_raw": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qui n'est pas du tout correcte ni a jour 0 0 répondre TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier ! 59 29 répondre 1 réponse(s) Affichage température ambiante Chamsi - le 4 novembre 2023 Bonjour, es ce qq1 aurait une idée sur l’affichage de la température ambiante sur le tableau de bord de la tiggo 7 pro. Merci 27 12 répondre Promotions incroyables Hyacinthe Vlavonou - le 16 septembre 2023 Ils font de très belles promotion actuellement sur les différentes gamme où la 2 pro Toute Option à 168.000 Clé en main La 4 pro Toute option à 227.000dhs Clé en main Cette promotion dure jusqu'à fin du mois de septembre d'après le concessionnaire. 38 25 répondre Puissance et bva Mohamed amine - le 3 juin 2023 En ayant la fiche technique du constructeur , j'ai pu constaté : -la puissancebmentionnée dans la fiche est 187cv et non pas 254. - le moteur est effectivement un 2l. L'équipe wandaloo j'aimerai bien avoir plus d'infos sur la bva , est- ce une cvt ou une automatique à convertisseur de couple ou une robotisée à double embrayage sec ou humide. 32 26 répondre AVIS SUR CHERY TIGGO 7 PRO Assane Dabre - le 1 octobre 2022 Quel est votre avis sur Tiggo 7 pro ? Bonne affaire ou non ? Merci 141 51 répondre 1 réponse(s) pièces de rechange QQ ? jam - le 9 octobre 2014 SVP ou est ce qu'on peux trouver des pieces de rechanges du chery QQ au maroc ??? merci 72 45 répondre 5 réponse(s) Chery a113 Ilyana .J - le 25 septembre 2020 Bonjour . Quelqu’un peut m’aider a trouver des concessionnaires De chery a casablanca ,oubien s’il ya un distributeur parmis vous qui px m aider j’ai besoin d’un ECU( engine controle unit) j’arrive pas a trouver la meme référence. Ma voiture que j acheter depuis un mois et en panne pour 15 jours mnt . Merci en avance 10 8 répondre 1 réponse(s)",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://www.wandaloo.com/forum/chery/tiggo-4-pro/#avis",
-      "related_keywords": "2025;automatique",
+      "discussion_url": "https://www.wandaloo.com/occasion/voiture-occasion-maroc-argus/28,1688,1,49500,2022/21304.html",
+      "related_keywords": "2025;2026;automatique;neuf",
       "trader_signal_keywords": "concessionnaire"
     },
     {
-      "scrape_date": "2026-06-30",
-      "scrape_week": "2026-W27",
-      "country": "Morocco",
-      "source": "Wandaloo Chery forum",
-      "source_type": "public_html",
-      "search_keyword": "Hyundai Accent",
-      "matched_model": "Chery Tiggo 4 Pro",
-      "mention_title": "Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand l",
-      "mention_text_raw": "Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier !",
-      "author_or_channel": "",
-      "published_time": "",
-      "discussion_url": "https://www.wandaloo.com",
-      "related_keywords": "",
-      "trader_signal_keywords": ""
-    },
-    {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -568,15 +525,15 @@
       "search_keyword": "MG5",
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
-      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 132 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
+      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 134 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=1051142d3f157d753513bc72acb757d7",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65",
       "related_keywords": "2026",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -587,12 +544,12 @@
       "mention_text_raw": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p40",
       "related_keywords": "2026",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -603,12 +560,12 @@
       "mention_text_raw": "Comment fonctionne une voiture MG 100% électrique ? Explication simple ... 100% électriques ? Selon les marchés, MG propose plusieurs modèles 100% électriques. On peut notamment citer : MG ZS EV ; MG4 Electric ; MG5 Electric selon les pays ; MG Marvel R ; MG Cyberster. Au Maroc, les modèles disponibles peuvent varier. Il est donc conseillé de vérifier ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p33",
       "related_keywords": "",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -619,12 +576,12 @@
       "mention_text_raw": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG La MG Cyberster est l’un des modèles les plus spectaculaires de la gamme MG. Contrairement aux MG3, MG5 , ZS ou HS, elle ne vise pas le marché familial ou rationnel. C’est un roadster 100% électrique, pensé comme une vitrine technologique et sportive pour la marque. Au Maroc, la Cyberster permet ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p26",
       "related_keywords": "",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -635,12 +592,12 @@
       "mention_text_raw": "Présentation de la MG5 — la berline compacte accessible de MG La MG5 est une berline compacte proposée au Maroc, pensée pour les conducteurs qui cherchent une voiture familiale simple, confortable et bien équipée, sans passer par un SUV. Elle se positionne comme une alternative intéressante pour ceux qui veulent une voiture neuve, automatique, avec un bon ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p21",
       "related_keywords": "automatique",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -651,12 +608,12 @@
       "mention_text_raw": "L'arrivée de MG au Maroc — l'histoire d'un retour ... thermiques, hybrides rechargeables et 100% électriques. Parmi les modèles annoncés au lancement, on retrouvait notamment la MG ZS, la MG HS, la MG5 , la MG3, mais aussi des modèles électrifiés comme la MG4 Electric, la MG ZS EV, la MG HS PHEV et la MG Marvel R. Qui distribue MG au Maroc ? Au ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=1051142d3f157d753513bc72acb757d7#p17",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=cf6737c1f4f3b46a4fa5dcbf4ddf4e65#p17",
       "related_keywords": "",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -672,7 +629,7 @@
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-06-30",
+      "scrape_date": "2026-07-01",
       "scrape_week": "2026-W27",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
