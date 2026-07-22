@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-21T05:53:36.324548+00:00",
+    "generated_at": "2026-07-22T05:52:45.337030+00:00",
     "source_directory": "data/latest",
     "row_counts": {
       "model_heat": 5,
@@ -26,7 +26,7 @@
       "mention_count": "6",
       "trader_signal_count": "0",
       "unique_url_count": "6",
-      "latest_seen": "2026-07-21",
+      "latest_seen": "2026-07-22",
       "search_keywords": "Changan X5 Plus; MG5"
     },
     {
@@ -36,7 +36,7 @@
       "mention_count": "2",
       "trader_signal_count": "0",
       "unique_url_count": "2",
-      "latest_seen": "2026-07-21",
+      "latest_seen": "2026-07-22",
       "search_keywords": "MG5"
     },
     {
@@ -46,7 +46,7 @@
       "mention_count": "1",
       "trader_signal_count": "1",
       "unique_url_count": "1",
-      "latest_seen": "2026-07-21",
+      "latest_seen": "2026-07-22",
       "search_keywords": "MG5"
     },
     {
@@ -56,7 +56,7 @@
       "mention_count": "1",
       "trader_signal_count": "1",
       "unique_url_count": "1",
-      "latest_seen": "2026-07-21",
+      "latest_seen": "2026-07-22",
       "search_keywords": "MG5"
     },
     {
@@ -66,7 +66,7 @@
       "mention_count": "1",
       "trader_signal_count": "1",
       "unique_url_count": "1",
-      "latest_seen": "2026-07-21",
+      "latest_seen": "2026-07-22",
       "search_keywords": "MG5"
     }
   ],
@@ -200,7 +200,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=c7ec18fb6f0f39fca99408b6cbce578b",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=12e466c38325d3b3c9b407a0995277cd",
       "trader_signal_keywords": ""
     },
     {
@@ -209,7 +209,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p40",
       "trader_signal_keywords": ""
     },
     {
@@ -218,7 +218,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Comment fonctionne une voiture MG 100% électrique ? Explication simple",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p33",
       "trader_signal_keywords": ""
     },
     {
@@ -227,7 +227,7 @@
       "matched_model": "MG5",
       "mention_title": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p26",
       "trader_signal_keywords": ""
     },
     {
@@ -236,7 +236,7 @@
       "matched_model": "MG5",
       "mention_title": "Présentation de la MG5 — la berline compacte accessible de MG",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p21",
       "trader_signal_keywords": ""
     },
     {
@@ -269,7 +269,7 @@
   ],
   "cleaned_mentions": [
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "Wandaloo MG forum",
@@ -287,7 +287,7 @@
       "dedupe_key_text_url": "https://www.wandaloo.com/neuf/mg/hs/#avis|pas d hybride ni hybride rechargeable hey el arabia le 17 octobre 2025 donc au maroc la mg hs n est pas pas proposee en hybride ni en ph pas d hybride ni hybride rechargeable hey el arabia le 17 octobre 2025 donc au maro"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "Wandaloo Geely forum",
@@ -295,7 +295,7 @@
       "search_keyword": "MG5",
       "matched_model": "Geely Coolray",
       "mention_title": "Embarras de choix Said oubejja - le 2 février 2026 Bonjour Mrs... Avec un budget de 350 000 dh pour acquérir une Geely EX5...n est il pas op",
-      "mention_text_raw": "Embarras de choix Said oubejja - le 2 février 2026 Bonjour Mrs... Avec un budget de 350 000 dh pour acquérir une Geely EX5...n est il pas opportun d avoir une Mercedes ou Audi occasion de 3 à 4 ans...car le problème des véhicules chinois en général est les pièces de rechange...il va falloir bcp d années pour les pièces de rechange disponibles ainsi que le réseau des ces pièces à travers le Royaume ! 39 38 répondre Très Satisfait Driss - le 9 janvier 2024 Pour l'avoir achetée et en étant très objectivement satisfait, je vous recommande vivement la Geely Coolray, car dans son segment elle est juste parfaite, à tous les niveaux : moteur puissant et économique de technologie Volvo, transmission automatique avec chaîne de distribution (pas de courroie), une suspension très très confortable, jantes 17\", double cockpit digital, et plein d'autres options premium high-tech, de série dès la version confort. Dorénavant, mes standards de valeurs des véhicules ont changé, car tout dirham payé en plus pour acheter une autre voiture de la même catégorie et avec les mêmes équipements est considéré pour moi comme une dépense superflue voire irraisonnée. Tout cela avec une garantie imbattable de 6 ans ou 200.000 Km. Bravo à l'importateur officiel de Geely au Maroc, pour avoir fait le choix judicieux de représenter cette marque automobile phare de la plus grande puissance économique du monde, c'est un choix intéressant lorsqu'on veut offrir de la qualité qui répond à tous les standards internationaux de sécurité pour pouvoir s'imposer dans plusieurs marchés à l'export, donc récemment le Maroc, il était temps. Pour ma part, la Coolray ce fut LE smart choice, vraiment elle en impose et surtout on a le sentiment de fiabilité et de robustesse dès qu'on est dedans, on est presque dans un cocon, en plus il y a une très bonne insonorisation, et un grand espace d'habitacle, on préférerait vraiment à la limite ne pas en descendre et que la route se prolonge encore un peu plus, aussi le grand écran me permet de projeter des vidéos en ligne pour distraire les enfants durant les trajets, d'ailleurs ils sont ravis et on a largement de la place au coffre pour mettre les bagages de tout le monde sans devoir faire des compromis. En tout cas, le must pour moi c'est d'avoir vécu la plus agréable expérience d'achat d'un véhicule neuf tout droit sorti de la maison en comparaison avec les autres maisons de mes voitures précédentes, car pour avoir souvent sorti des voitures neuves j'ai personnellement eu déjà pas mal de bonnes bonnes expériences avec des maisons de voitures françaises, italiennes, allemandes et coréennes. C'est pour dire que, là, je sais vraiment de quoi je parle : en effet dès ma prise en charge par le très sympathique et compétant conseiller commercial, tout est allé smoothly sous le pilotage bienveillant de la brillante Showroom Manager, car sa maîtrise totale dénote d'un profond respect pour son métier, ce qui installe rapidement une sorte de symbiose win-win avec son client, au point où ce dernier est tellement convaincu de son choix qu'il devient lui même un ambassadeur de la marque Geely, d'où mon présent témoignage. Pour finir, je tiens à saluer l'engagement et la proactivité des équipes de l'administration des ventes et aussi du SAV, avec une très grande attention donnée aux petits détails avec plein de sympathie et de professionnalisme. Un petit conseil, (désolé pour le spoil) lors de la mise en main de votre véhicule, savourez ce délicieux moment où toute l'équipe du showroom se réunit autour de vous et votre Geely dans un cérémonial joyeux et animé, il y a tellement d'énergie positive que vous vous sentez sur un piédestal en faisant sortir votre nouvelle voiture sous les applaudissements de tous les présents. Une master-classe en matière d'expérience client, avec, cerise sur le gâteau, un superbe Coolray flambant neuf ! 69 93 répondre 2 réponse(s) avis GEELY nordine - le 27 octobre 2014 la nullité au prix fort façon CHINA en plus...non merci. 37 20 répondre",
+      "mention_text_raw": "Embarras de choix Said oubejja - le 2 février 2026 Bonjour Mrs... Avec un budget de 350 000 dh pour acquérir une Geely EX5...n est il pas opportun d avoir une Mercedes ou Audi occasion de 3 à 4 ans...car le problème des véhicules chinois en général est les pièces de rechange...il va falloir bcp d années pour les pièces de rechange disponibles ainsi que le réseau des ces pièces à travers le Royaume ! 40 38 répondre Très Satisfait Driss - le 9 janvier 2024 Pour l'avoir achetée et en étant très objectivement satisfait, je vous recommande vivement la Geely Coolray, car dans son segment elle est juste parfaite, à tous les niveaux : moteur puissant et économique de technologie Volvo, transmission automatique avec chaîne de distribution (pas de courroie), une suspension très très confortable, jantes 17\", double cockpit digital, et plein d'autres options premium high-tech, de série dès la version confort. Dorénavant, mes standards de valeurs des véhicules ont changé, car tout dirham payé en plus pour acheter une autre voiture de la même catégorie et avec les mêmes équipements est considéré pour moi comme une dépense superflue voire irraisonnée. Tout cela avec une garantie imbattable de 6 ans ou 200.000 Km. Bravo à l'importateur officiel de Geely au Maroc, pour avoir fait le choix judicieux de représenter cette marque automobile phare de la plus grande puissance économique du monde, c'est un choix intéressant lorsqu'on veut offrir de la qualité qui répond à tous les standards internationaux de sécurité pour pouvoir s'imposer dans plusieurs marchés à l'export, donc récemment le Maroc, il était temps. Pour ma part, la Coolray ce fut LE smart choice, vraiment elle en impose et surtout on a le sentiment de fiabilité et de robustesse dès qu'on est dedans, on est presque dans un cocon, en plus il y a une très bonne insonorisation, et un grand espace d'habitacle, on préférerait vraiment à la limite ne pas en descendre et que la route se prolonge encore un peu plus, aussi le grand écran me permet de projeter des vidéos en ligne pour distraire les enfants durant les trajets, d'ailleurs ils sont ravis et on a largement de la place au coffre pour mettre les bagages de tout le monde sans devoir faire des compromis. En tout cas, le must pour moi c'est d'avoir vécu la plus agréable expérience d'achat d'un véhicule neuf tout droit sorti de la maison en comparaison avec les autres maisons de mes voitures précédentes, car pour avoir souvent sorti des voitures neuves j'ai personnellement eu déjà pas mal de bonnes bonnes expériences avec des maisons de voitures françaises, italiennes, allemandes et coréennes. C'est pour dire que, là, je sais vraiment de quoi je parle : en effet dès ma prise en charge par le très sympathique et compétant conseiller commercial, tout est allé smoothly sous le pilotage bienveillant de la brillante Showroom Manager, car sa maîtrise totale dénote d'un profond respect pour son métier, ce qui installe rapidement une sorte de symbiose win-win avec son client, au point où ce dernier est tellement convaincu de son choix qu'il devient lui même un ambassadeur de la marque Geely, d'où mon présent témoignage. Pour finir, je tiens à saluer l'engagement et la proactivité des équipes de l'administration des ventes et aussi du SAV, avec une très grande attention donnée aux petits détails avec plein de sympathie et de professionnalisme. Un petit conseil, (désolé pour le spoil) lors de la mise en main de votre véhicule, savourez ce délicieux moment où toute l'équipe du showroom se réunit autour de vous et votre Geely dans un cérémonial joyeux et animé, il y a tellement d'énergie positive que vous vous sentez sur un piédestal en faisant sortir votre nouvelle voiture sous les applaudissements de tous les présents. Une master-classe en matière d'expérience client, avec, cerise sur le gâteau, un superbe Coolray flambant neuf ! 69 93 répondre 2 réponse(s) avis GEELY nordine - le 27 octobre 2014 la nullité au prix fort façon CHINA en plus...non merci. 37 20 répondre",
       "author_or_channel": "",
       "published_time": "",
       "discussion_url": "https://www.wandaloo.com/forum/geely/ex5-phev/#avis",
@@ -305,7 +305,7 @@
       "dedupe_key_text_url": "https://www.wandaloo.com/forum/geely/ex5-phev/#avis|embarras de choix said oubejja le 2 fevrier 2026 bonjour mrs avec un budget de 350 000 dh pour acquerir une geely ex5 n est il pas op embarras de choix said oubejja le 2 fevrier 2026 bonjour mrs avec un budget de 350 000"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "Wandaloo Chery forum",
@@ -313,7 +313,7 @@
       "search_keyword": "MG5",
       "matched_model": "Chery Tiggo 4 Pro",
       "mention_title": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qu",
-      "mention_text_raw": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qui n'est pas du tout correcte ni a jour 3 0 répondre TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier ! 60 29 répondre 1 réponse(s) Affichage température ambiante Chamsi - le 4 novembre 2023 Bonjour, es ce qq1 aurait une idée sur l’affichage de la température ambiante sur le tableau de bord de la tiggo 7 pro. Merci 27 12 répondre Promotions incroyables Hyacinthe Vlavonou - le 16 septembre 2023 Ils font de très belles promotion actuellement sur les différentes gamme où la 2 pro Toute Option à 168.000 Clé en main La 4 pro Toute option à 227.000dhs Clé en main Cette promotion dure jusqu'à fin du mois de septembre d'après le concessionnaire. 38 25 répondre Puissance et bva Mohamed amine - le 3 juin 2023 En ayant la fiche technique du constructeur , j'ai pu constaté : -la puissancebmentionnée dans la fiche est 187cv et non pas 254. - le moteur est effectivement un 2l. L'équipe wandaloo j'aimerai bien avoir plus d'infos sur la bva , est- ce une cvt ou une automatique à convertisseur de couple ou une robotisée à double embrayage sec ou humide. 33 27 répondre AVIS SUR CHERY TIGGO 7 PRO Assane Dabre - le 1 octobre 2022 Quel est votre avis sur Tiggo 7 pro ? Bonne affaire ou non ? Merci 141 51 répondre 1 réponse(s) pièces de rechange QQ ? jam - le 9 octobre 2014 SVP ou est ce qu'on peux trouver des pieces de rechanges du chery QQ au maroc ??? merci 72 45 répondre 5 réponse(s) Chery a113 Ilyana .J - le 25 septembre 2020 Bonjour . Quelqu’un peut m’aider a trouver des concessionnaires De chery a casablanca ,oubien s’il ya un distributeur parmis vous qui px m aider j’ai besoin d’un ECU( engine controle unit) j’arrive pas a trouver la meme référence. Ma voiture que j acheter depuis un mois et en panne pour 15 jours mnt . Merci en avance 10 8 répondre 1 réponse(s)",
+      "mention_text_raw": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qui n'est pas du tout correcte ni a jour 3 0 répondre TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier ! 60 29 répondre 1 réponse(s) Affichage température ambiante Chamsi - le 4 novembre 2023 Bonjour, es ce qq1 aurait une idée sur l’affichage de la température ambiante sur le tableau de bord de la tiggo 7 pro. Merci 27 13 répondre Promotions incroyables Hyacinthe Vlavonou - le 16 septembre 2023 Ils font de très belles promotion actuellement sur les différentes gamme où la 2 pro Toute Option à 168.000 Clé en main La 4 pro Toute option à 227.000dhs Clé en main Cette promotion dure jusqu'à fin du mois de septembre d'après le concessionnaire. 38 25 répondre Puissance et bva Mohamed amine - le 3 juin 2023 En ayant la fiche technique du constructeur , j'ai pu constaté : -la puissancebmentionnée dans la fiche est 187cv et non pas 254. - le moteur est effectivement un 2l. L'équipe wandaloo j'aimerai bien avoir plus d'infos sur la bva , est- ce une cvt ou une automatique à convertisseur de couple ou une robotisée à double embrayage sec ou humide. 33 27 répondre AVIS SUR CHERY TIGGO 7 PRO Assane Dabre - le 1 octobre 2022 Quel est votre avis sur Tiggo 7 pro ? Bonne affaire ou non ? Merci 141 51 répondre 1 réponse(s) pièces de rechange QQ ? jam - le 9 octobre 2014 SVP ou est ce qu'on peux trouver des pieces de rechanges du chery QQ au maroc ??? merci 72 45 répondre 5 réponse(s) Chery a113 Ilyana .J - le 25 septembre 2020 Bonjour . Quelqu’un peut m’aider a trouver des concessionnaires De chery a casablanca ,oubien s’il ya un distributeur parmis vous qui px m aider j’ai besoin d’un ECU( engine controle unit) j’arrive pas a trouver la meme référence. Ma voiture que j acheter depuis un mois et en panne pour 15 jours mnt . Merci en avance 10 8 répondre 1 réponse(s)",
       "author_or_channel": "",
       "published_time": "",
       "discussion_url": "https://www.wandaloo.com/occasion/voiture-occasion-maroc-argus/28,1688,1,49500,2022/21304.html",
@@ -323,7 +323,7 @@
       "dedupe_key_text_url": "https://www.wandaloo.com/occasion/voiture-occasion-maroc-argus/28,1688,1,49500,2022/21304.html|cote d occasion et prix voiture neuve iliasse le 30 juin 2026 la cote d occasion et n importe quoi vous base sur des prix de vente neuf qu cote d occasion et prix voiture neuve iliasse le 30 juin 2026 la cote d occasion "
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -331,17 +331,17 @@
       "search_keyword": "MG5",
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
-      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 1587 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
+      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 1673 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=c7ec18fb6f0f39fca99408b6cbce578b",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=12e466c38325d3b3c9b407a0995277cd",
       "related_keywords": "2026",
       "trader_signal_keywords": "",
       "title_normalized": "prix mg maroc 2026 tous les modeles tarifs et versions disponibles",
-      "dedupe_key_text_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=c7ec18fb6f0f39fca99408b6cbce578b|prix mg maroc 2026 tous les modeles tarifs et versions disponibles par mehdi b 15 mai 2026 01 05 forum configurations prix sujet prix mg maroc 2026 tous les modeles tarifs et versions disponibles reponses 0 vues 1587 pri"
+      "dedupe_key_text_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=12e466c38325d3b3c9b407a0995277cd|prix mg maroc 2026 tous les modeles tarifs et versions disponibles par mehdi b 15 mai 2026 01 05 forum configurations prix sujet prix mg maroc 2026 tous les modeles tarifs et versions disponibles reponses 0 vues 1673 pri"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -352,14 +352,14 @@
       "mention_text_raw": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p40",
       "related_keywords": "2026",
       "trader_signal_keywords": "",
       "title_normalized": "prix mg maroc 2026 tous les modeles tarifs et versions disponibles",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p40|prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix public indicatif a partir de 169 000 dh mg3 hybrid motorisation hybride prix publ"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p40|prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix public indicatif a partir de 169 000 dh mg3 hybrid motorisation hybride prix publ"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -370,14 +370,14 @@
       "mention_text_raw": "Comment fonctionne une voiture MG 100% électrique ? Explication simple ... 100% électriques ? Selon les marchés, MG propose plusieurs modèles 100% électriques. On peut notamment citer : MG ZS EV ; MG4 Electric ; MG5 Electric selon les pays ; MG Marvel R ; MG Cyberster. Au Maroc, les modèles disponibles peuvent varier. Il est donc conseillé de vérifier ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p33",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "comment fonctionne une voiture mg 100 electrique explication simple",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p33|comment fonctionne une voiture mg 100 electrique explication simple comment fonctionne une voiture mg 100 electrique explication simple 100 electriques selon les marches mg propose plusieurs modeles 100 electriques on pe"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p33|comment fonctionne une voiture mg 100 electrique explication simple comment fonctionne une voiture mg 100 electrique explication simple 100 electriques selon les marches mg propose plusieurs modeles 100 electriques on pe"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -388,14 +388,14 @@
       "mention_text_raw": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG La MG Cyberster est l’un des modèles les plus spectaculaires de la gamme MG. Contrairement aux MG3, MG5 , ZS ou HS, elle ne vise pas le marché familial ou rationnel. C’est un roadster 100% électrique, pensé comme une vitrine technologique et sportive pour la marque. Au Maroc, la Cyberster permet ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p26",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "presentation de la mg cyberster le roadster electrique vitrine de mg",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p26|presentation de la mg cyberster le roadster electrique vitrine de mg presentation de la mg cyberster le roadster electrique vitrine de mg la mg cyberster est l un des modeles les plus spectaculaires de la gamme mg contra"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p26|presentation de la mg cyberster le roadster electrique vitrine de mg presentation de la mg cyberster le roadster electrique vitrine de mg la mg cyberster est l un des modeles les plus spectaculaires de la gamme mg contra"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -406,14 +406,14 @@
       "mention_text_raw": "Présentation de la MG5 — la berline compacte accessible de MG La MG5 est une berline compacte proposée au Maroc, pensée pour les conducteurs qui cherchent une voiture familiale simple, confortable et bien équipée, sans passer par un SUV. Elle se positionne comme une alternative intéressante pour ceux qui veulent une voiture neuve, automatique, avec un bon ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p21",
       "related_keywords": "automatique",
       "trader_signal_keywords": "",
       "title_normalized": "presentation de la mg5 la berline compacte accessible de mg",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p21|presentation de la mg5 la berline compacte accessible de mg presentation de la mg5 la berline compacte accessible de mg la mg5 est une berline compacte proposee au maroc pensee pour les conducteurs qui cherchent une voit"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p21|presentation de la mg5 la berline compacte accessible de mg presentation de la mg5 la berline compacte accessible de mg la mg5 est une berline compacte proposee au maroc pensee pour les conducteurs qui cherchent une voit"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -424,14 +424,14 @@
       "mention_text_raw": "L'arrivée de MG au Maroc — l'histoire d'un retour ... thermiques, hybrides rechargeables et 100% électriques. Parmi les modèles annoncés au lancement, on retrouvait notamment la MG ZS, la MG HS, la MG5 , la MG3, mais aussi des modèles électrifiés comme la MG4 Electric, la MG ZS EV, la MG HS PHEV et la MG Marvel R. Qui distribue MG au Maroc ? Au ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p17",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p17",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "l arrivee de mg au maroc l histoire d un retour",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p17|l arrivee de mg au maroc l histoire d un retour l arrivee de mg au maroc l histoire d un retour thermiques hybrides rechargeables et 100 electriques parmi les modeles annonces au lancement on retrouvait notamment la mg z"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p17|l arrivee de mg au maroc l histoire d un retour l arrivee de mg au maroc l histoire d un retour thermiques hybrides rechargeables et 100 electriques parmi les modeles annonces au lancement on retrouvait notamment la mg z"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -449,7 +449,7 @@
       "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=43&hilit=Changan+X5+Plus#p43|ventes mg au maroc en europe une marque encore jeune chez nous mais portee par une forte dynamique mondiale ventes mg au maroc en europe une marque encore jeune chez nous mais portee par une forte dynamique mondiale mg f"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -469,7 +469,7 @@
   ],
   "raw_mentions": [
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "Wandaloo MG forum",
@@ -485,7 +485,7 @@
       "trader_signal_keywords": "disponible;concessionnaire"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "Wandaloo Geely forum",
@@ -493,7 +493,7 @@
       "search_keyword": "Hyundai Accent",
       "matched_model": "Geely Coolray",
       "mention_title": "Embarras de choix Said oubejja - le 2 février 2026 Bonjour Mrs... Avec un budget de 350 000 dh pour acquérir une Geely EX5...n est il pas op",
-      "mention_text_raw": "Embarras de choix Said oubejja - le 2 février 2026 Bonjour Mrs... Avec un budget de 350 000 dh pour acquérir une Geely EX5...n est il pas opportun d avoir une Mercedes ou Audi occasion de 3 à 4 ans...car le problème des véhicules chinois en général est les pièces de rechange...il va falloir bcp d années pour les pièces de rechange disponibles ainsi que le réseau des ces pièces à travers le Royaume ! 39 38 répondre Très Satisfait Driss - le 9 janvier 2024 Pour l'avoir achetée et en étant très objectivement satisfait, je vous recommande vivement la Geely Coolray, car dans son segment elle est juste parfaite, à tous les niveaux : moteur puissant et économique de technologie Volvo, transmission automatique avec chaîne de distribution (pas de courroie), une suspension très très confortable, jantes 17\", double cockpit digital, et plein d'autres options premium high-tech, de série dès la version confort. Dorénavant, mes standards de valeurs des véhicules ont changé, car tout dirham payé en plus pour acheter une autre voiture de la même catégorie et avec les mêmes équipements est considéré pour moi comme une dépense superflue voire irraisonnée. Tout cela avec une garantie imbattable de 6 ans ou 200.000 Km. Bravo à l'importateur officiel de Geely au Maroc, pour avoir fait le choix judicieux de représenter cette marque automobile phare de la plus grande puissance économique du monde, c'est un choix intéressant lorsqu'on veut offrir de la qualité qui répond à tous les standards internationaux de sécurité pour pouvoir s'imposer dans plusieurs marchés à l'export, donc récemment le Maroc, il était temps. Pour ma part, la Coolray ce fut LE smart choice, vraiment elle en impose et surtout on a le sentiment de fiabilité et de robustesse dès qu'on est dedans, on est presque dans un cocon, en plus il y a une très bonne insonorisation, et un grand espace d'habitacle, on préférerait vraiment à la limite ne pas en descendre et que la route se prolonge encore un peu plus, aussi le grand écran me permet de projeter des vidéos en ligne pour distraire les enfants durant les trajets, d'ailleurs ils sont ravis et on a largement de la place au coffre pour mettre les bagages de tout le monde sans devoir faire des compromis. En tout cas, le must pour moi c'est d'avoir vécu la plus agréable expérience d'achat d'un véhicule neuf tout droit sorti de la maison en comparaison avec les autres maisons de mes voitures précédentes, car pour avoir souvent sorti des voitures neuves j'ai personnellement eu déjà pas mal de bonnes bonnes expériences avec des maisons de voitures françaises, italiennes, allemandes et coréennes. C'est pour dire que, là, je sais vraiment de quoi je parle : en effet dès ma prise en charge par le très sympathique et compétant conseiller commercial, tout est allé smoothly sous le pilotage bienveillant de la brillante Showroom Manager, car sa maîtrise totale dénote d'un profond respect pour son métier, ce qui installe rapidement une sorte de symbiose win-win avec son client, au point où ce dernier est tellement convaincu de son choix qu'il devient lui même un ambassadeur de la marque Geely, d'où mon présent témoignage. Pour finir, je tiens à saluer l'engagement et la proactivité des équipes de l'administration des ventes et aussi du SAV, avec une très grande attention donnée aux petits détails avec plein de sympathie et de professionnalisme. Un petit conseil, (désolé pour le spoil) lors de la mise en main de votre véhicule, savourez ce délicieux moment où toute l'équipe du showroom se réunit autour de vous et votre Geely dans un cérémonial joyeux et animé, il y a tellement d'énergie positive que vous vous sentez sur un piédestal en faisant sortir votre nouvelle voiture sous les applaudissements de tous les présents. Une master-classe en matière d'expérience client, avec, cerise sur le gâteau, un superbe Coolray flambant neuf ! 69 93 répondre 2 réponse(s) avis GEELY nordine - le 27 octobre 2014 la nullité au prix fort façon CHINA en plus...non merci. 37 20 répondre",
+      "mention_text_raw": "Embarras de choix Said oubejja - le 2 février 2026 Bonjour Mrs... Avec un budget de 350 000 dh pour acquérir une Geely EX5...n est il pas opportun d avoir une Mercedes ou Audi occasion de 3 à 4 ans...car le problème des véhicules chinois en général est les pièces de rechange...il va falloir bcp d années pour les pièces de rechange disponibles ainsi que le réseau des ces pièces à travers le Royaume ! 40 38 répondre Très Satisfait Driss - le 9 janvier 2024 Pour l'avoir achetée et en étant très objectivement satisfait, je vous recommande vivement la Geely Coolray, car dans son segment elle est juste parfaite, à tous les niveaux : moteur puissant et économique de technologie Volvo, transmission automatique avec chaîne de distribution (pas de courroie), une suspension très très confortable, jantes 17\", double cockpit digital, et plein d'autres options premium high-tech, de série dès la version confort. Dorénavant, mes standards de valeurs des véhicules ont changé, car tout dirham payé en plus pour acheter une autre voiture de la même catégorie et avec les mêmes équipements est considéré pour moi comme une dépense superflue voire irraisonnée. Tout cela avec une garantie imbattable de 6 ans ou 200.000 Km. Bravo à l'importateur officiel de Geely au Maroc, pour avoir fait le choix judicieux de représenter cette marque automobile phare de la plus grande puissance économique du monde, c'est un choix intéressant lorsqu'on veut offrir de la qualité qui répond à tous les standards internationaux de sécurité pour pouvoir s'imposer dans plusieurs marchés à l'export, donc récemment le Maroc, il était temps. Pour ma part, la Coolray ce fut LE smart choice, vraiment elle en impose et surtout on a le sentiment de fiabilité et de robustesse dès qu'on est dedans, on est presque dans un cocon, en plus il y a une très bonne insonorisation, et un grand espace d'habitacle, on préférerait vraiment à la limite ne pas en descendre et que la route se prolonge encore un peu plus, aussi le grand écran me permet de projeter des vidéos en ligne pour distraire les enfants durant les trajets, d'ailleurs ils sont ravis et on a largement de la place au coffre pour mettre les bagages de tout le monde sans devoir faire des compromis. En tout cas, le must pour moi c'est d'avoir vécu la plus agréable expérience d'achat d'un véhicule neuf tout droit sorti de la maison en comparaison avec les autres maisons de mes voitures précédentes, car pour avoir souvent sorti des voitures neuves j'ai personnellement eu déjà pas mal de bonnes bonnes expériences avec des maisons de voitures françaises, italiennes, allemandes et coréennes. C'est pour dire que, là, je sais vraiment de quoi je parle : en effet dès ma prise en charge par le très sympathique et compétant conseiller commercial, tout est allé smoothly sous le pilotage bienveillant de la brillante Showroom Manager, car sa maîtrise totale dénote d'un profond respect pour son métier, ce qui installe rapidement une sorte de symbiose win-win avec son client, au point où ce dernier est tellement convaincu de son choix qu'il devient lui même un ambassadeur de la marque Geely, d'où mon présent témoignage. Pour finir, je tiens à saluer l'engagement et la proactivité des équipes de l'administration des ventes et aussi du SAV, avec une très grande attention donnée aux petits détails avec plein de sympathie et de professionnalisme. Un petit conseil, (désolé pour le spoil) lors de la mise en main de votre véhicule, savourez ce délicieux moment où toute l'équipe du showroom se réunit autour de vous et votre Geely dans un cérémonial joyeux et animé, il y a tellement d'énergie positive que vous vous sentez sur un piédestal en faisant sortir votre nouvelle voiture sous les applaudissements de tous les présents. Une master-classe en matière d'expérience client, avec, cerise sur le gâteau, un superbe Coolray flambant neuf ! 69 93 répondre 2 réponse(s) avis GEELY nordine - le 27 octobre 2014 la nullité au prix fort façon CHINA en plus...non merci. 37 20 répondre",
       "author_or_channel": "",
       "published_time": "",
       "discussion_url": "https://www.wandaloo.com/forum/geely/ex5-phev/#avis",
@@ -501,7 +501,7 @@
       "trader_signal_keywords": "china;showroom"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "Wandaloo Chery forum",
@@ -509,7 +509,7 @@
       "search_keyword": "Hyundai Accent",
       "matched_model": "Chery Tiggo 4 Pro",
       "mention_title": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qu",
-      "mention_text_raw": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qui n'est pas du tout correcte ni a jour 3 0 répondre TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier ! 60 29 répondre 1 réponse(s) Affichage température ambiante Chamsi - le 4 novembre 2023 Bonjour, es ce qq1 aurait une idée sur l’affichage de la température ambiante sur le tableau de bord de la tiggo 7 pro. Merci 27 12 répondre Promotions incroyables Hyacinthe Vlavonou - le 16 septembre 2023 Ils font de très belles promotion actuellement sur les différentes gamme où la 2 pro Toute Option à 168.000 Clé en main La 4 pro Toute option à 227.000dhs Clé en main Cette promotion dure jusqu'à fin du mois de septembre d'après le concessionnaire. 38 25 répondre Puissance et bva Mohamed amine - le 3 juin 2023 En ayant la fiche technique du constructeur , j'ai pu constaté : -la puissancebmentionnée dans la fiche est 187cv et non pas 254. - le moteur est effectivement un 2l. L'équipe wandaloo j'aimerai bien avoir plus d'infos sur la bva , est- ce une cvt ou une automatique à convertisseur de couple ou une robotisée à double embrayage sec ou humide. 33 27 répondre AVIS SUR CHERY TIGGO 7 PRO Assane Dabre - le 1 octobre 2022 Quel est votre avis sur Tiggo 7 pro ? Bonne affaire ou non ? Merci 141 51 répondre 1 réponse(s) pièces de rechange QQ ? jam - le 9 octobre 2014 SVP ou est ce qu'on peux trouver des pieces de rechanges du chery QQ au maroc ??? merci 72 45 répondre 5 réponse(s) Chery a113 Ilyana .J - le 25 septembre 2020 Bonjour . Quelqu’un peut m’aider a trouver des concessionnaires De chery a casablanca ,oubien s’il ya un distributeur parmis vous qui px m aider j’ai besoin d’un ECU( engine controle unit) j’arrive pas a trouver la meme référence. Ma voiture que j acheter depuis un mois et en panne pour 15 jours mnt . Merci en avance 10 8 répondre 1 réponse(s)",
+      "mention_text_raw": "Cote d'occasion et prix voiture neuve Iliasse - le 30 juin 2026 La côte d'occasion et n'importe quoi vous basé sur des prix de vente neuf qui n'est pas du tout correcte ni a jour 3 0 répondre TIGGO 4 Pro Abel KRIBI - le 9 mars 2025 Je suis très déçu de l'acquisition , en septembre 2024, de la nouvelle CHERY TIGGO4 Pro : consommation excessive à 10,8 à 11.2 L/100 quand la brochure fournie prétend une consommation à 7, 1 . Un gouffre financier ! 60 29 répondre 1 réponse(s) Affichage température ambiante Chamsi - le 4 novembre 2023 Bonjour, es ce qq1 aurait une idée sur l’affichage de la température ambiante sur le tableau de bord de la tiggo 7 pro. Merci 27 13 répondre Promotions incroyables Hyacinthe Vlavonou - le 16 septembre 2023 Ils font de très belles promotion actuellement sur les différentes gamme où la 2 pro Toute Option à 168.000 Clé en main La 4 pro Toute option à 227.000dhs Clé en main Cette promotion dure jusqu'à fin du mois de septembre d'après le concessionnaire. 38 25 répondre Puissance et bva Mohamed amine - le 3 juin 2023 En ayant la fiche technique du constructeur , j'ai pu constaté : -la puissancebmentionnée dans la fiche est 187cv et non pas 254. - le moteur est effectivement un 2l. L'équipe wandaloo j'aimerai bien avoir plus d'infos sur la bva , est- ce une cvt ou une automatique à convertisseur de couple ou une robotisée à double embrayage sec ou humide. 33 27 répondre AVIS SUR CHERY TIGGO 7 PRO Assane Dabre - le 1 octobre 2022 Quel est votre avis sur Tiggo 7 pro ? Bonne affaire ou non ? Merci 141 51 répondre 1 réponse(s) pièces de rechange QQ ? jam - le 9 octobre 2014 SVP ou est ce qu'on peux trouver des pieces de rechanges du chery QQ au maroc ??? merci 72 45 répondre 5 réponse(s) Chery a113 Ilyana .J - le 25 septembre 2020 Bonjour . Quelqu’un peut m’aider a trouver des concessionnaires De chery a casablanca ,oubien s’il ya un distributeur parmis vous qui px m aider j’ai besoin d’un ECU( engine controle unit) j’arrive pas a trouver la meme référence. Ma voiture que j acheter depuis un mois et en panne pour 15 jours mnt . Merci en avance 10 8 répondre 1 réponse(s)",
       "author_or_channel": "",
       "published_time": "",
       "discussion_url": "https://www.wandaloo.com/occasion/voiture-occasion-maroc-argus/28,1688,1,49500,2022/21304.html",
@@ -517,7 +517,7 @@
       "trader_signal_keywords": "concessionnaire"
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -525,15 +525,15 @@
       "search_keyword": "MG5",
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
-      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 1587 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
+      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 1673 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=c7ec18fb6f0f39fca99408b6cbce578b",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=12e466c38325d3b3c9b407a0995277cd",
       "related_keywords": "2026",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -544,12 +544,12 @@
       "mention_text_raw": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p40",
       "related_keywords": "2026",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -560,12 +560,12 @@
       "mention_text_raw": "Comment fonctionne une voiture MG 100% électrique ? Explication simple ... 100% électriques ? Selon les marchés, MG propose plusieurs modèles 100% électriques. On peut notamment citer : MG ZS EV ; MG4 Electric ; MG5 Electric selon les pays ; MG Marvel R ; MG Cyberster. Au Maroc, les modèles disponibles peuvent varier. Il est donc conseillé de vérifier ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p33",
       "related_keywords": "",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -576,12 +576,12 @@
       "mention_text_raw": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG La MG Cyberster est l’un des modèles les plus spectaculaires de la gamme MG. Contrairement aux MG3, MG5 , ZS ou HS, elle ne vise pas le marché familial ou rationnel. C’est un roadster 100% électrique, pensé comme une vitrine technologique et sportive pour la marque. Au Maroc, la Cyberster permet ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p26",
       "related_keywords": "",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -592,12 +592,12 @@
       "mention_text_raw": "Présentation de la MG5 — la berline compacte accessible de MG La MG5 est une berline compacte proposée au Maroc, pensée pour les conducteurs qui cherchent une voiture familiale simple, confortable et bien équipée, sans passer par un SUV. Elle se positionne comme une alternative intéressante pour ceux qui veulent une voiture neuve, automatique, avec un bon ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p21",
       "related_keywords": "automatique",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -608,12 +608,12 @@
       "mention_text_raw": "L'arrivée de MG au Maroc — l'histoire d'un retour ... thermiques, hybrides rechargeables et 100% électriques. Parmi les modèles annoncés au lancement, on retrouvait notamment la MG ZS, la MG HS, la MG5 , la MG3, mais aussi des modèles électrifiés comme la MG4 Electric, la MG ZS EV, la MG HS PHEV et la MG Marvel R. Qui distribue MG au Maroc ? Au ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=c7ec18fb6f0f39fca99408b6cbce578b#p17",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=12e466c38325d3b3c9b407a0995277cd#p17",
       "related_keywords": "",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -629,7 +629,7 @@
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-07-21",
+      "scrape_date": "2026-07-22",
       "scrape_week": "2026-W30",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
