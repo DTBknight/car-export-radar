@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-25T08:11:30.876108+00:00",
+    "generated_at": "2026-09-26T08:04:09.705684+00:00",
     "source_directory": "data/latest",
     "row_counts": {
       "model_heat": 2,
@@ -8,8 +8,8 @@
       "trader_frequency": 0,
       "source_coverage": 1,
       "evidence_samples": 5,
-      "cleaned_mentions": 8,
-      "raw_mentions": 8,
+      "cleaned_mentions": 6,
+      "raw_mentions": 6,
       "model_frequency": 11,
       "weekly_change": 11,
       "related_frequency": 42,
@@ -23,11 +23,11 @@
       "country": "Morocco",
       "source": "MG Club Maroc forum",
       "matched_model": "MG ZS",
-      "mention_count": "6",
+      "mention_count": "4",
       "trader_signal_count": "0",
-      "unique_url_count": "6",
-      "latest_seen": "2026-09-25",
-      "search_keywords": "Changan X5 Plus; MG5"
+      "unique_url_count": "4",
+      "latest_seen": "2026-09-26",
+      "search_keywords": "MG5"
     },
     {
       "country": "Morocco",
@@ -36,7 +36,7 @@
       "mention_count": "2",
       "trader_signal_count": "0",
       "unique_url_count": "2",
-      "latest_seen": "2026-09-25",
+      "latest_seen": "2026-09-26",
       "search_keywords": "MG5"
     }
   ],
@@ -46,9 +46,9 @@
       "country": "Morocco",
       "source": "MG Club Maroc forum",
       "matched_model": "MG ZS",
-      "mention_count": "6",
+      "mention_count": "4",
       "previous_week_count": "0",
-      "absolute_change": "6",
+      "absolute_change": "4",
       "pct_change": ""
     },
     {
@@ -68,8 +68,8 @@
       "country": "Morocco",
       "source": "MG Club Maroc forum",
       "source_type": "public_html",
-      "mention_count": "8",
-      "unique_url_count": "8",
+      "mention_count": "6",
+      "unique_url_count": "6",
       "matched_model_count": "2"
     }
   ],
@@ -80,7 +80,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=095d2b86ae052e3379fed531a37fe2d8",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=6e36341727bf60462f418a2f2ed6e425",
       "trader_signal_keywords": ""
     },
     {
@@ -89,7 +89,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p40",
       "trader_signal_keywords": ""
     },
     {
@@ -98,7 +98,7 @@
       "matched_model": "MG ZS",
       "mention_title": "Comment fonctionne une voiture MG 100% électrique ? Explication simple",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p33",
       "trader_signal_keywords": ""
     },
     {
@@ -107,7 +107,7 @@
       "matched_model": "MG5",
       "mention_title": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p26",
       "trader_signal_keywords": ""
     },
     {
@@ -116,13 +116,13 @@
       "matched_model": "MG5",
       "mention_title": "Présentation de la MG5 — la berline compacte accessible de MG",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p21",
       "trader_signal_keywords": ""
     }
   ],
   "cleaned_mentions": [
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -130,17 +130,17 @@
       "search_keyword": "MG5",
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
-      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 2204 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
+      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 2206 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=095d2b86ae052e3379fed531a37fe2d8",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=6e36341727bf60462f418a2f2ed6e425",
       "related_keywords": "2026",
       "trader_signal_keywords": "",
       "title_normalized": "prix mg maroc 2026 tous les modeles tarifs et versions disponibles",
-      "dedupe_key_text_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=095d2b86ae052e3379fed531a37fe2d8|prix mg maroc 2026 tous les modeles tarifs et versions disponibles par mehdi b 15 mai 2026 01 05 forum configurations prix sujet prix mg maroc 2026 tous les modeles tarifs et versions disponibles reponses 0 vues 2204 pri"
+      "dedupe_key_text_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=6e36341727bf60462f418a2f2ed6e425|prix mg maroc 2026 tous les modeles tarifs et versions disponibles par mehdi b 15 mai 2026 01 05 forum configurations prix sujet prix mg maroc 2026 tous les modeles tarifs et versions disponibles reponses 0 vues 2206 pri"
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -151,14 +151,14 @@
       "mention_text_raw": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p40",
       "related_keywords": "2026",
       "trader_signal_keywords": "",
       "title_normalized": "prix mg maroc 2026 tous les modeles tarifs et versions disponibles",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p40|prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix public indicatif a partir de 169 000 dh mg3 hybrid motorisation hybride prix publ"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p40|prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix mg maroc 2026 tous les modeles tarifs et versions disponibles prix public indicatif a partir de 169 000 dh mg3 hybrid motorisation hybride prix publ"
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -169,14 +169,14 @@
       "mention_text_raw": "Comment fonctionne une voiture MG 100% électrique ? Explication simple ... 100% électriques ? Selon les marchés, MG propose plusieurs modèles 100% électriques. On peut notamment citer : MG ZS EV ; MG4 Electric ; MG5 Electric selon les pays ; MG Marvel R ; MG Cyberster. Au Maroc, les modèles disponibles peuvent varier. Il est donc conseillé de vérifier ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p33",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "comment fonctionne une voiture mg 100 electrique explication simple",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p33|comment fonctionne une voiture mg 100 electrique explication simple comment fonctionne une voiture mg 100 electrique explication simple 100 electriques selon les marches mg propose plusieurs modeles 100 electriques on pe"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p33|comment fonctionne une voiture mg 100 electrique explication simple comment fonctionne une voiture mg 100 electrique explication simple 100 electriques selon les marches mg propose plusieurs modeles 100 electriques on pe"
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -187,14 +187,14 @@
       "mention_text_raw": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG La MG Cyberster est l’un des modèles les plus spectaculaires de la gamme MG. Contrairement aux MG3, MG5 , ZS ou HS, elle ne vise pas le marché familial ou rationnel. C’est un roadster 100% électrique, pensé comme une vitrine technologique et sportive pour la marque. Au Maroc, la Cyberster permet ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p26",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "presentation de la mg cyberster le roadster electrique vitrine de mg",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p26|presentation de la mg cyberster le roadster electrique vitrine de mg presentation de la mg cyberster le roadster electrique vitrine de mg la mg cyberster est l un des modeles les plus spectaculaires de la gamme mg contra"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p26|presentation de la mg cyberster le roadster electrique vitrine de mg presentation de la mg cyberster le roadster electrique vitrine de mg la mg cyberster est l un des modeles les plus spectaculaires de la gamme mg contra"
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -205,14 +205,14 @@
       "mention_text_raw": "Présentation de la MG5 — la berline compacte accessible de MG La MG5 est une berline compacte proposée au Maroc, pensée pour les conducteurs qui cherchent une voiture familiale simple, confortable et bien équipée, sans passer par un SUV. Elle se positionne comme une alternative intéressante pour ceux qui veulent une voiture neuve, automatique, avec un bon ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p21",
       "related_keywords": "automatique",
       "trader_signal_keywords": "",
       "title_normalized": "presentation de la mg5 la berline compacte accessible de mg",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p21|presentation de la mg5 la berline compacte accessible de mg presentation de la mg5 la berline compacte accessible de mg la mg5 est une berline compacte proposee au maroc pensee pour les conducteurs qui cherchent une voit"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p21|presentation de la mg5 la berline compacte accessible de mg presentation de la mg5 la berline compacte accessible de mg la mg5 est une berline compacte proposee au maroc pensee pour les conducteurs qui cherchent une voit"
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -223,52 +223,16 @@
       "mention_text_raw": "L'arrivée de MG au Maroc — l'histoire d'un retour ... thermiques, hybrides rechargeables et 100% électriques. Parmi les modèles annoncés au lancement, on retrouvait notamment la MG ZS, la MG HS, la MG5 , la MG3, mais aussi des modèles électrifiés comme la MG4 Electric, la MG ZS EV, la MG HS PHEV et la MG Marvel R. Qui distribue MG au Maroc ? Au ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p17",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p17",
       "related_keywords": "",
       "trader_signal_keywords": "",
       "title_normalized": "l arrivee de mg au maroc l histoire d un retour",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p17|l arrivee de mg au maroc l histoire d un retour l arrivee de mg au maroc l histoire d un retour thermiques hybrides rechargeables et 100 electriques parmi les modeles annonces au lancement on retrouvait notamment la mg z"
-    },
-    {
-      "scrape_date": "2026-09-25",
-      "scrape_week": "2026-W39",
-      "country": "Morocco",
-      "source": "MG Club Maroc forum",
-      "source_type": "public_html",
-      "search_keyword": "Changan X5 Plus",
-      "matched_model": "MG ZS",
-      "mention_title": "Ventes MG au Maroc, en Europe : une marque encore jeune chez nous, mais portée par une forte dynamique mondiale",
-      "mention_text_raw": "Ventes MG au Maroc, en Europe : une marque encore jeune chez nous, mais portée par une forte dynamique mondiale MG fait partie des marques automobiles qui attirent de plus en plus l’attention au Maroc. On voit davantage de modèles MG sur les routes, les discussions autour de la marque se multiplient, et les automobilistes marocains s’intéressent de plus en plus aux modèles comme la MG3 Hybrid+, la MG ZS, la MG ...",
-      "author_or_channel": "",
-      "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=43&hilit=Changan+X5+Plus#p43",
-      "related_keywords": "",
-      "trader_signal_keywords": "",
-      "title_normalized": "ventes mg au maroc en europe une marque encore jeune chez nous mais portee par une forte dynamique mondiale",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=43&hilit=Changan+X5+Plus#p43|ventes mg au maroc en europe une marque encore jeune chez nous mais portee par une forte dynamique mondiale ventes mg au maroc en europe une marque encore jeune chez nous mais portee par une forte dynamique mondiale mg f"
-    },
-    {
-      "scrape_date": "2026-09-25",
-      "scrape_week": "2026-W39",
-      "country": "Morocco",
-      "source": "MG Club Maroc forum",
-      "source_type": "public_html",
-      "search_keyword": "Changan X5 Plus",
-      "matched_model": "MG ZS",
-      "mention_title": "MG ZS Hybrid+ : comprendre la perte de puissance en montée quand la batterie est faible",
-      "mention_text_raw": "MG ZS Hybrid+ : comprendre la perte de puissance en montée quand la batterie est faible ... La voiture peut alors offrir de meilleures accélérations et de meilleures reprises. Quand la batterie est faible, l’aide électrique devient plus limitée. Dans certaines conditions, le moteur essence doit alors faire davantage de travail seul. Il peut même devoir à la fois faire avancer la ...",
-      "author_or_channel": "",
-      "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=41&hilit=Changan+X5+Plus#p41",
-      "related_keywords": "",
-      "trader_signal_keywords": "",
-      "title_normalized": "mg zs hybrid comprendre la perte de puissance en montee quand la batterie est faible",
-      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=41&hilit=Changan+X5+Plus#p41|mg zs hybrid comprendre la perte de puissance en montee quand la batterie est faible mg zs hybrid comprendre la perte de puissance en montee quand la batterie est faible la voiture peut alors offrir de meilleures acceler"
+      "dedupe_key_text_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p17|l arrivee de mg au maroc l histoire d un retour l arrivee de mg au maroc l histoire d un retour thermiques hybrides rechargeables et 100 electriques parmi les modeles annonces au lancement on retrouvait notamment la mg z"
     }
   ],
   "raw_mentions": [
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -276,15 +240,15 @@
       "search_keyword": "MG5",
       "matched_model": "MG ZS",
       "mention_title": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles",
-      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 2204 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
+      "mention_text_raw": "par Mehdi.B 15 mai 2026, 01:05 Forum : Configurations & prix Sujet : Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles Réponses : 0 Vues : 2206 Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ... Aller au message",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=095d2b86ae052e3379fed531a37fe2d8",
+      "discussion_url": "https://mgclub.ma/memberlist.php?mode=viewprofile&u=2&sid=6e36341727bf60462f418a2f2ed6e425",
       "related_keywords": "2026",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -295,12 +259,12 @@
       "mention_text_raw": "Prix MG Maroc 2026 : tous les modèles, tarifs et versions disponibles ... Prix public indicatif : à partir de 169 000 DH --- MG3 Hybrid+ Motorisation : Hybride Prix public indicatif : de 202 000 à 227 000 DH --- MG5 Motorisation : Essence Prix public indicatif : à partir de 195 000 DH --- MG ZS EV Motorisation : 100% électrique Prix public indicatif : de ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p40",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=40&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p40",
       "related_keywords": "2026",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -311,12 +275,12 @@
       "mention_text_raw": "Comment fonctionne une voiture MG 100% électrique ? Explication simple ... 100% électriques ? Selon les marchés, MG propose plusieurs modèles 100% électriques. On peut notamment citer : MG ZS EV ; MG4 Electric ; MG5 Electric selon les pays ; MG Marvel R ; MG Cyberster. Au Maroc, les modèles disponibles peuvent varier. Il est donc conseillé de vérifier ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p33",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=33&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p33",
       "related_keywords": "",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -327,12 +291,12 @@
       "mention_text_raw": "Présentation de la MG Cyberster — le roadster électrique vitrine de MG La MG Cyberster est l’un des modèles les plus spectaculaires de la gamme MG. Contrairement aux MG3, MG5 , ZS ou HS, elle ne vise pas le marché familial ou rationnel. C’est un roadster 100% électrique, pensé comme une vitrine technologique et sportive pour la marque. Au Maroc, la Cyberster permet ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p26",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=26&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p26",
       "related_keywords": "",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -343,12 +307,12 @@
       "mention_text_raw": "Présentation de la MG5 — la berline compacte accessible de MG La MG5 est une berline compacte proposée au Maroc, pensée pour les conducteurs qui cherchent une voiture familiale simple, confortable et bien équipée, sans passer par un SUV. Elle se positionne comme une alternative intéressante pour ceux qui veulent une voiture neuve, automatique, avec un bon ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p21",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=21&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p21",
       "related_keywords": "automatique",
       "trader_signal_keywords": ""
     },
     {
-      "scrape_date": "2026-09-25",
+      "scrape_date": "2026-09-26",
       "scrape_week": "2026-W39",
       "country": "Morocco",
       "source": "MG Club Maroc forum",
@@ -359,39 +323,7 @@
       "mention_text_raw": "L'arrivée de MG au Maroc — l'histoire d'un retour ... thermiques, hybrides rechargeables et 100% électriques. Parmi les modèles annoncés au lancement, on retrouvait notamment la MG ZS, la MG HS, la MG5 , la MG3, mais aussi des modèles électrifiés comme la MG4 Electric, la MG ZS EV, la MG HS PHEV et la MG Marvel R. Qui distribue MG au Maroc ? Au ...",
       "author_or_channel": "",
       "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=095d2b86ae052e3379fed531a37fe2d8#p17",
-      "related_keywords": "",
-      "trader_signal_keywords": ""
-    },
-    {
-      "scrape_date": "2026-09-25",
-      "scrape_week": "2026-W39",
-      "country": "Morocco",
-      "source": "MG Club Maroc forum",
-      "source_type": "public_html",
-      "search_keyword": "Changan X5 Plus",
-      "matched_model": "MG ZS",
-      "mention_title": "Ventes MG au Maroc, en Europe : une marque encore jeune chez nous, mais portée par une forte dynamique mondiale",
-      "mention_text_raw": "Ventes MG au Maroc, en Europe : une marque encore jeune chez nous, mais portée par une forte dynamique mondiale MG fait partie des marques automobiles qui attirent de plus en plus l’attention au Maroc. On voit davantage de modèles MG sur les routes, les discussions autour de la marque se multiplient, et les automobilistes marocains s’intéressent de plus en plus aux modèles comme la MG3 Hybrid+, la MG ZS, la MG ...",
-      "author_or_channel": "",
-      "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=43&hilit=Changan+X5+Plus#p43",
-      "related_keywords": "",
-      "trader_signal_keywords": ""
-    },
-    {
-      "scrape_date": "2026-09-25",
-      "scrape_week": "2026-W39",
-      "country": "Morocco",
-      "source": "MG Club Maroc forum",
-      "source_type": "public_html",
-      "search_keyword": "Changan X5 Plus",
-      "matched_model": "MG ZS",
-      "mention_title": "MG ZS Hybrid+ : comprendre la perte de puissance en montée quand la batterie est faible",
-      "mention_text_raw": "MG ZS Hybrid+ : comprendre la perte de puissance en montée quand la batterie est faible ... La voiture peut alors offrir de meilleures accélérations et de meilleures reprises. Quand la batterie est faible, l’aide électrique devient plus limitée. Dans certaines conditions, le moteur essence doit alors faire davantage de travail seul. Il peut même devoir à la fois faire avancer la ...",
-      "author_or_channel": "",
-      "published_time": "",
-      "discussion_url": "https://mgclub.ma/viewtopic.php?p=41&hilit=Changan+X5+Plus#p41",
+      "discussion_url": "https://mgclub.ma/viewtopic.php?p=17&hilit=MG5&sid=6e36341727bf60462f418a2f2ed6e425#p17",
       "related_keywords": "",
       "trader_signal_keywords": ""
     }
